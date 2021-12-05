@@ -20,14 +20,24 @@ public class FilterController : MonoBehaviour
         ChangeLightColor(Color.blue);
     }
 
-    public void SetWhiteColor()
+    public void SetClearColor()
     {
-        ChangeLightColor(Color.white);
+        ChangeLightColor(new Color(1, 1, 1, 0));
     }
-
 
     private void ChangeLightColor(Color color)
     {
         filterMaterial.SetColor("_LightColor", color);
+    }
+
+    private void Update()
+    {
+        float mouseRatioX = Input.mousePosition.x;
+        float mouseRatioY = Input.mousePosition.y;
+
+        var mousePos = new Vector4(mouseRatioX, mouseRatioY,
+            Screen.width, Screen.height);
+
+        filterMaterial.SetVector("_MousePos", mousePos);
     }
 }

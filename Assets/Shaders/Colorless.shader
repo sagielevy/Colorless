@@ -4,7 +4,8 @@ Shader "Unlit/Colorless"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _ColorblindFactor ("ColorblindFactor", Range(0.0, 1.0)) = 1.0
-        _LightColor("LightColor", Color) = (1, 1, 1, 1)
+        _LightColor("LightColor", Color) = (1, 1, 1, 0)
+        _MousePos("MousePos", Vector) = (0, 0, 0, 0)
     }
     SubShader
     {
@@ -39,6 +40,7 @@ Shader "Unlit/Colorless"
             float4 _MainTex_ST;
             float _ColorblindFactor;
             fixed4 _LightColor;
+            fixed4 _MousePos;
 
             v2f vert (appdata v)
             {
@@ -52,11 +54,25 @@ Shader "Unlit/Colorless"
 
             fixed4 frag (v2f i) : SV_Target
             {
+                float magnifierRadius = 0.1 * _MousePos.zw;
+
                 fixed4 col = tex2D(_MainTex, i.uv);
-                col.rgb = i.color.rgb * col.rgb * _LightColor.rgb;
+                col.rgb = i.color.rgb * col.rgb;
+
                 fixed3 YPrime = fixed3(0.299, 0.5959, 0.2115);
                 fixed3 intensity = fixed3(1, 1, 1) * dot(col, YPrime);
                 fixed3 displayCol = lerp(intensity, col.rgb, _ColorblindFactor);
+
+                float4 screenPos = ComputeScreenPos(i.vertex);
+                float2 screenUV = screenPos.xy / screenPos.w;
+
+                // Flip and scale by 0.5 to account for NDC.
+                float2 mouseCoords = _MousePos.xy * float2(1, -1) * 0.5;
+                float distFromMouse = length(screenUV - mouseCoords);
+
+                if (_LightColor.a > 0 && distFromMouse < magnifierRadius) {
+                    displayCol *= _LightColor.rgb;
+                }
 
                 return fixed4(displayCol, col.a);
             }
