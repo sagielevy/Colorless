@@ -94,15 +94,15 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 4
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
+  - rid: 3509978797154238570
+  - rid: 3509978797154238571
+  - rid: 3509978797154238572
+  - rid: 3509978797154238573
+  - rid: 3509978797154238574
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238570
       type: {class: HasCategoryItem, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.HasCategoryItem
@@ -113,20 +113,20 @@ MonoBehaviour:
           boolValue: 0
           stringValue: Equipment
           intValue: 0
-    - rid: 1
+    - rid: 3509978797154238571
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: -6382214904321203751}
         m_GlobalCooldown: 1.5
-    - rid: 2
+    - rid: 3509978797154238572
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookForward
         m_Enabled: 1
         m_Target: 1
-    - rid: 3
+    - rid: 3509978797154238573
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -134,7 +134,7 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Rampage
         m_TransitionDuration: 0.15
-    - rid: 4
+    - rid: 3509978797154238574
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
@@ -205,14 +205,14 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 3
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
+  - rid: 3509978797154238492
+  - rid: 3509978797154238493
+  - rid: 3509978797154238494
+  - rid: 3509978797154238495
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238492
       type: {class: HasCategoryItem, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.HasCategoryItem
@@ -223,20 +223,20 @@ MonoBehaviour:
           boolValue: 0
           stringValue: Equipment
           intValue: 0
-    - rid: 1
+    - rid: 3509978797154238493
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: -5242721879078471986}
         m_GlobalCooldown: 1
-    - rid: 2
+    - rid: 3509978797154238494
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookForward
         m_Enabled: 1
         m_Target: 1
-    - rid: 3
+    - rid: 3509978797154238495
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -290,21 +290,21 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 5
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 7
-  - rid: 8
-  - rid: 9
-  - rid: 10
+  - rid: 3509978797154238557
+  - rid: 3509978797154238558
+  - rid: 3509978797154238559
+  - rid: 3509978797154238560
+  - rid: 3509978797154238561
+  - rid: 3509978797154238562
+  - rid: 3509978797154238563
+  - rid: 3509978797154238564
+  - rid: 3509978797154238565
+  - rid: 3509978797154238566
+  - rid: 3509978797154238567
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238557
       type: {class: InvokeNotify, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: 
@@ -339,7 +339,7 @@ MonoBehaviour:
           delay: 2
           duration: 2
           ignoreTimeScale: 1
-    - rid: 1
+    - rid: 3509978797154238558
       type: {class: Invoke, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -366,14 +366,14 @@ MonoBehaviour:
           m_ColorValue: {r: 0, g: 0, b: 0, a: 0}
           m_ObjectValue: {fileID: 0}
           m_ArgumentType: 3
-    - rid: 2
+    - rid: 3509978797154238559
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: 
         m_Enabled: 1
         item: {fileID: -4423743630002525559}
         m_GlobalCooldown: 5
-    - rid: 3
+    - rid: 3509978797154238560
       type: {class: SetFloat, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetFloat
@@ -382,7 +382,7 @@ MonoBehaviour:
         m_ParameterName: Speed Multiplier
         m_Value: 1.5
         m_DampTime: 0
-    - rid: 4
+    - rid: 3509978797154238561
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -390,13 +390,13 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Healing
         m_TransitionDuration: 0.2
-    - rid: 5
+    - rid: 3509978797154238562
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 0.3
-    - rid: 6
+    - rid: 3509978797154238563
       type: {class: Play, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Play
@@ -404,13 +404,13 @@ MonoBehaviour:
         m_Clip: {fileID: 8300000, guid: b1fe5449a2cb6794f87f3c1950f42263, type: 3}
         m_AudioMixerGroup: {fileID: 8643709756097329450, guid: 08813bea6fa2f304d8179aec903c1bd9, type: 2}
         m_Volume: 0.3
-    - rid: 7
+    - rid: 3509978797154238564
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
         m_Enabled: 1
         duration: 0.2
-    - rid: 8
+    - rid: 3509978797154238565
       type: {class: Instantiate, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -420,7 +420,7 @@ MonoBehaviour:
         m_BoneName: 
         m_Offset: {x: 0, y: 0, z: 0}
         m_IgnorePlayerCollision: 1
-    - rid: 9
+    - rid: 3509978797154238566
       type: {class: Invoke, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -447,7 +447,7 @@ MonoBehaviour:
           m_ColorValue: {r: 0, g: 0, b: 0, a: 0}
           m_ObjectValue: {fileID: 0}
           m_ArgumentType: 3
-    - rid: 10
+    - rid: 3509978797154238567
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -549,18 +549,18 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 4
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 7
+  - rid: 3509978797154238594
+  - rid: 3509978797154238595
+  - rid: 3509978797154238596
+  - rid: 3509978797154238597
+  - rid: 3509978797154238598
+  - rid: 3509978797154238599
+  - rid: 3509978797154238600
+  - rid: 3509978797154238601
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238594
       type: {class: InvokeNotify, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.InvokeNotify
@@ -595,7 +595,7 @@ MonoBehaviour:
           delay: 2
           duration: 2
           ignoreTimeScale: 1
-    - rid: 1
+    - rid: 3509978797154238595
       type: {class: ApplyDamage, ns: DevionGames.StatSystem, asm: DevionGames.StatSystem}
       data:
         m_Type: DevionGames.StatSystem.ApplyDamage
@@ -603,14 +603,14 @@ MonoBehaviour:
         m_Target: 1
         m_StatName: Mana
         m_Value: 4
-    - rid: 2
+    - rid: 3509978797154238596
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: -194854561785592449}
         m_GlobalCooldown: 1
-    - rid: 3
+    - rid: 3509978797154238597
       type: {class: SetFloat, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetFloat
@@ -619,7 +619,7 @@ MonoBehaviour:
         m_ParameterName: Speed Multiplier
         m_Value: 2
         m_DampTime: 0
-    - rid: 4
+    - rid: 3509978797154238598
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -627,19 +627,19 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Healing
         m_TransitionDuration: 0.2
-    - rid: 5
+    - rid: 3509978797154238599
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookForward
         m_Enabled: 1
         m_Target: 1
-    - rid: 6
+    - rid: 3509978797154238600
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 0.6
-    - rid: 7
+    - rid: 3509978797154238601
       type: {class: InstantiateAtMouse, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.InstantiateAtMouse
@@ -731,14 +731,14 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 2
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
+  - rid: 3509978797154238530
+  - rid: 3509978797154238531
+  - rid: 3509978797154238532
+  - rid: 3509978797154238533
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238530
       type: {class: HasCategoryItem, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.HasCategoryItem
@@ -749,20 +749,20 @@ MonoBehaviour:
           boolValue: 0
           stringValue: Equipment
           intValue: 0
-    - rid: 1
+    - rid: 3509978797154238531
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: 678841275653576696}
         m_GlobalCooldown: 1
-    - rid: 2
+    - rid: 3509978797154238532
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookForward
         m_Enabled: 1
         m_Target: 1
-    - rid: 3
+    - rid: 3509978797154238533
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -816,18 +816,18 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 20
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 7
+  - rid: 3509978797154238501
+  - rid: 3509978797154238502
+  - rid: 3509978797154238503
+  - rid: 3509978797154238504
+  - rid: 3509978797154238505
+  - rid: 3509978797154238506
+  - rid: 3509978797154238507
+  - rid: 3509978797154238508
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238501
       type: {class: HasCategoryItem, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.HasCategoryItem
@@ -838,14 +838,14 @@ MonoBehaviour:
           boolValue: 0
           stringValue: Equipment
           intValue: 0
-    - rid: 1
+    - rid: 3509978797154238502
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: 1337782666225268451}
         m_GlobalCooldown: 0.5
-    - rid: 2
+    - rid: 3509978797154238503
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -853,7 +853,7 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Power Up
         m_TransitionDuration: 0.2
-    - rid: 3
+    - rid: 3509978797154238504
       type: {class: AddModifier, ns: DevionGames.StatSystem, asm: DevionGames.StatSystem}
       data:
         m_Type: DevionGames.StatSystem.AddModifier
@@ -862,13 +862,13 @@ MonoBehaviour:
         m_StatName: Critical Strike
         m_Value: 60
         m_ModType: 0
-    - rid: 4
+    - rid: 3509978797154238505
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 1
-    - rid: 5
+    - rid: 3509978797154238506
       type: {class: Instantiate, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Instantiate
@@ -878,13 +878,13 @@ MonoBehaviour:
         m_BoneName: 
         m_Offset: {x: 0, y: 0, z: 0}
         m_IgnorePlayerCollision: 1
-    - rid: 6
+    - rid: 3509978797154238507
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 17
-    - rid: 7
+    - rid: 3509978797154238508
       type: {class: AddModifier, ns: DevionGames.StatSystem, asm: DevionGames.StatSystem}
       data:
         m_Type: DevionGames.StatSystem.AddModifier
@@ -939,19 +939,19 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 2
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 7
-  - rid: 8
+  - rid: 3509978797154238617
+  - rid: 3509978797154238618
+  - rid: 3509978797154238619
+  - rid: 3509978797154238620
+  - rid: 3509978797154238621
+  - rid: 3509978797154238622
+  - rid: 3509978797154238623
+  - rid: 3509978797154238624
+  - rid: 3509978797154238625
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238617
       type: {class: InvokeNotify, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.InvokeNotify
@@ -986,7 +986,7 @@ MonoBehaviour:
           delay: 2
           duration: 2
           ignoreTimeScale: 1
-    - rid: 1
+    - rid: 3509978797154238618
       type: {class: ApplyDamage, ns: DevionGames.StatSystem, asm: DevionGames.StatSystem}
       data:
         m_Type: DevionGames.StatSystem.ApplyDamage
@@ -994,14 +994,14 @@ MonoBehaviour:
         m_Target: 1
         m_StatName: Mana
         m_Value: 3
-    - rid: 2
+    - rid: 3509978797154238619
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: 3676597254134110875}
         m_GlobalCooldown: 2
-    - rid: 3
+    - rid: 3509978797154238620
       type: {class: SetFloat, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetFloat
@@ -1010,7 +1010,7 @@ MonoBehaviour:
         m_ParameterName: Speed Multiplier
         m_Value: 2
         m_DampTime: 0
-    - rid: 4
+    - rid: 3509978797154238621
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -1018,13 +1018,13 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Healing
         m_TransitionDuration: 0.2
-    - rid: 5
+    - rid: 3509978797154238622
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 0.4
-    - rid: 6
+    - rid: 3509978797154238623
       type: {class: Play, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Play
@@ -1032,13 +1032,13 @@ MonoBehaviour:
         m_Clip: {fileID: 8300000, guid: a37f1a80841448b46b7d4af0675c3139, type: 3}
         m_AudioMixerGroup: {fileID: 8643709756097329450, guid: 08813bea6fa2f304d8179aec903c1bd9, type: 2}
         m_Volume: 0.3
-    - rid: 7
+    - rid: 3509978797154238624
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 0.2
-    - rid: 8
+    - rid: 3509978797154238625
       type: {class: Instantiate, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Instantiate
@@ -1096,14 +1096,14 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 1
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
+  - rid: 3509978797154238511
+  - rid: 3509978797154238512
+  - rid: 3509978797154238513
+  - rid: 3509978797154238514
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238511
       type: {class: HasCategoryItem, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.HasCategoryItem
@@ -1114,20 +1114,20 @@ MonoBehaviour:
           boolValue: 0
           stringValue: Equipment
           intValue: 0
-    - rid: 1
+    - rid: 3509978797154238512
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.ItemActions.Cooldown
         m_Enabled: 1
         item: {fileID: 4117155973668914919}
         m_GlobalCooldown: 0.5
-    - rid: 2
+    - rid: 3509978797154238513
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookForward
         m_Enabled: 1
         m_Target: 1
-    - rid: 3
+    - rid: 3509978797154238514
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -1198,18 +1198,18 @@ MonoBehaviour:
   m_UseCategoryCooldown: 0
   m_Cooldown: 3
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 7
+  - rid: 3509978797154238547
+  - rid: 3509978797154238548
+  - rid: 3509978797154238549
+  - rid: 3509978797154238550
+  - rid: 3509978797154238551
+  - rid: 3509978797154238552
+  - rid: 3509978797154238553
+  - rid: 3509978797154238554
   references:
     version: 2
     RefIds:
-    - rid: 0
+    - rid: 3509978797154238547
       type: {class: InvokeNotify, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: 
@@ -1244,7 +1244,7 @@ MonoBehaviour:
           delay: 2
           duration: 2
           ignoreTimeScale: 1
-    - rid: 1
+    - rid: 3509978797154238548
       type: {class: Invoke, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -1271,20 +1271,20 @@ MonoBehaviour:
           m_ColorValue: {r: 0, g: 0, b: 0, a: 0}
           m_ObjectValue: {fileID: 0}
           m_ArgumentType: 3
-    - rid: 2
+    - rid: 3509978797154238549
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
         m_Type: 
         m_Enabled: 1
         item: {fileID: 4447567160419299934}
         m_GlobalCooldown: 3
-    - rid: 3
+    - rid: 3509978797154238550
       type: {class: LookForward, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
         m_Enabled: 1
         m_Target: 1
-    - rid: 4
+    - rid: 3509978797154238551
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -1292,13 +1292,13 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Arcane Ball
         m_TransitionDuration: 0.2
-    - rid: 5
+    - rid: 3509978797154238552
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
         m_Enabled: 1
         duration: 0.6
-    - rid: 6
+    - rid: 3509978797154238553
       type: {class: Instantiate, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 
@@ -1308,7 +1308,7 @@ MonoBehaviour:
         m_BoneName: Spawnpoint
         m_Offset: {x: 0, y: 0, z: 0}
         m_IgnorePlayerCollision: 1
-    - rid: 7
+    - rid: 3509978797154238554
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: 

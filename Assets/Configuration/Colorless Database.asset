@@ -1,5 +1,115 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9073004910968629694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BFRed
+  m_EditorClassIdentifier: 
+  m_Id: 89a0c585-628a-4188-ae5e-02d5bd3a2b77
+  m_ItemName: BFRed
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 8f04edbc3e650c547a75bb75ec6ad4f2, type: 3}
+  m_Prefab: {fileID: 2041073069457500300, guid: 9b6a541b7dc3d5d469c68c73dbe0f688, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -4, y: 2, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-8659712222909341126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BreadBlue
+  m_EditorClassIdentifier: 
+  m_Id: 38b11a64-b520-4325-b409-6b73592c3369
+  m_ItemName: BreadBlue
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1954130a916e6af459862b14523b74ed, type: 3}
+  m_Prefab: {fileID: 44467981487333691, guid: 23adb3772bb65cb428a4b2a605cd5600, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -5, y: -2, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-7951129461597765027
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -33,6 +143,61 @@ MonoBehaviour:
   queriesHitTriggers: 0
   debugMessages: 1
   showAllComponents: 0
+--- !u!114 &-5778751113731850454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BFGreen
+  m_EditorClassIdentifier: 
+  m_Id: f2949760-b30a-40cb-810f-101e4a2a28cc
+  m_ItemName: BFGreen
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: aa19598acfed98c409a170a1587f549f, type: 3}
+  m_Prefab: {fileID: 588742654617664211, guid: dd0a7425748ed7c43a7dfafe3cf39dca, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 4, y: -4, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-4266261863886437094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,6 +370,61 @@ MonoBehaviour:
     delay: 2
     duration: 2
     ignoreTimeScale: 1
+--- !u!114 &-3901263345593252194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BreadPink
+  m_EditorClassIdentifier: 
+  m_Id: d295d08c-a68d-4348-b0bd-7b6b56f42bc9
+  m_ItemName: BreadPink
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 473df3182abbe75498acbff86f8c570f, type: 3}
+  m_Prefab: {fileID: 134823565915834292, guid: 91b81d84df73dd944b720642dfb937de, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 1, y: 3, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-3201273713965119927
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -274,6 +494,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &-659982248937434284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Id: c905b57e-5047-4f33-a1cf-9e8cea2d4f4a
+  m_ItemName: New Item
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 0}
+  m_Prefab: {fileID: 0}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-608516783115705796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -346,6 +609,12 @@ MonoBehaviour:
   - {fileID: -608516783115705796}
   - {fileID: 6472586216016713383}
   - {fileID: -3201273713965119927}
+  - {fileID: -8659712222909341126}
+  - {fileID: 1311017124147289044}
+  - {fileID: -3901263345593252194}
+  - {fileID: 1689613186483839733}
+  - {fileID: -9073004910968629694}
+  - {fileID: -5778751113731850454}
   currencies: []
   raritys: []
   categories:
@@ -358,6 +627,116 @@ MonoBehaviour:
   - {fileID: -4266261863886437094}
   - {fileID: 7371619099684580905}
   - {fileID: 3502729804850136454}
+--- !u!114 &1311017124147289044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BreadRed
+  m_EditorClassIdentifier: 
+  m_Id: 42e523b8-8e0b-4eac-bda1-1144f267ed78
+  m_ItemName: BreadRed
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 6a0950fe95b4d184c91ad7886faeb882, type: 3}
+  m_Prefab: {fileID: 7583862665613226055, guid: 839a38cd1c2728a4e9b3e2554312ab72, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 5, y: 5, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1689613186483839733
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: BFBlue
+  m_EditorClassIdentifier: 
+  m_Id: 8b09d3be-a4b9-448b-966f-b80d022bb756
+  m_ItemName: BFBlue
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 2fa2910898a2a2a46885e9ff93cf68ae, type: 3}
+  m_Prefab: {fileID: 589812554585419838, guid: a5800a302bd3e2543bac6ff233698f69, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 3, y: 3, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &3502729804850136454
 MonoBehaviour:
   m_ObjectHideFlags: 1
