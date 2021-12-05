@@ -42,6 +42,8 @@ Shader "Unlit/Colorless"
             fixed4 _LightColor;
             fixed4 _MousePos;
 
+            #define YPrime fixed3(0.299, 0.5959, 0.2115)
+
             v2f vert (appdata v)
             {
                 v2f o;
@@ -56,12 +58,8 @@ Shader "Unlit/Colorless"
             {
                 float magnifierRadius = 0.1 * _MousePos.zw;
 
-                fixed4 col = tex2D(_MainTex, i.uv);
-                col.rgb = i.color.rgb * col.rgb;
-
-                fixed3 YPrime = fixed3(0.299, 0.5959, 0.2115);
-                fixed3 intensity = fixed3(1, 1, 1) * dot(col, YPrime);
-                fixed3 displayCol = lerp(intensity, col.rgb, _ColorlessFactor);
+                fixed4 texCol = tex2D(_MainTex, i.uv);
+                fixed3 col = i.color.rgb * texCol.rgb;
 
                 float4 screenPos = ComputeScreenPos(i.vertex);
                 float2 screenUV = screenPos.xy / screenPos.w;
@@ -70,11 +68,17 @@ Shader "Unlit/Colorless"
                 float2 mouseCoords = _MousePos.xy * float2(1, -1) * 0.5;
                 float distFromMouse = length(screenUV - mouseCoords);
 
+                fixed3 displayCol;
+
                 if (_LightColor.a > 0 && distFromMouse < magnifierRadius) {
-                    displayCol *= _LightColor.rgb;
+                    col *= _LightColor.rgb;
+                    displayCol = col;
+                } else {
+                    fixed3 intensity = fixed3(1, 1, 1) * dot(col, YPrime);
+                    displayCol = lerp(intensity, col, _ColorlessFactor);
                 }
 
-                return fixed4(displayCol, col.a);
+                return fixed4(displayCol, texCol.a);
             }
             ENDCG
         }
