@@ -143,19 +143,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 2490231236538663165
-  - rid: 2490231236538663166
+  - rid: 2490231236538663448
+  - rid: 2490231236538663449
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 2490231236538663165
+    - rid: 2490231236538663448
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 2490231236538663166
+    - rid: 2490231236538663449
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup
