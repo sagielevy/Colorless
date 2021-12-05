@@ -13,7 +13,7 @@ namespace DevionGames.InventorySystem
 		[ItemPicker (true)]
 		[SerializeField]
         [FormerlySerializedAs("items")]
-        protected List<Item> m_Items = new List<Item> ();
+        protected List<Item> m_Items = new List<Item>();
         [FormerlySerializedAs("amounts")]
         [SerializeField]
         protected List<int> m_Amounts = new List<int>();

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BFRed
+  m_Name: Red Butterly
   m_EditorClassIdentifier: 
   m_Id: 89a0c585-628a-4188-ae5e-02d5bd3a2b77
   m_ItemName: Red Butterly
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BFGreen
+  m_Name: Green Butterly
   m_EditorClassIdentifier: 
   m_Id: f2949760-b30a-40cb-810f-101e4a2a28cc
   m_ItemName: Green Butterly
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BreadPink
+  m_Name: Pink Bread
   m_EditorClassIdentifier: 
   m_Id: d295d08c-a68d-4348-b0bd-7b6b56f42bc9
   m_ItemName: Pink Bread
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BreadGreen
+  m_Name: Green Bread
   m_EditorClassIdentifier: 
   m_Id: 44bd34bb-6846-4f13-92ac-26c9d1a76591
   m_ItemName: Green Bread
@@ -553,8 +553,8 @@ MonoBehaviour:
   - {fileID: 4162398669960941618}
   - {fileID: -608516783115705796}
   - {fileID: 6472586216016713383}
-  - {fileID: -3201273713965119927}
   - {fileID: 1311017124147289044}
+  - {fileID: -3201273713965119927}
   - {fileID: -3901263345593252194}
   - {fileID: 1689613186483839733}
   - {fileID: -9073004910968629694}
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BreadRed
+  m_Name: Red Bread
   m_EditorClassIdentifier: 
   m_Id: 42e523b8-8e0b-4eac-bda1-1144f267ed78
   m_ItemName: Red Bread
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: BFBlue
+  m_Name: Blue Butterly
   m_EditorClassIdentifier: 
   m_Id: 8b09d3be-a4b9-448b-966f-b80d022bb756
   m_ItemName: Blue Butterly

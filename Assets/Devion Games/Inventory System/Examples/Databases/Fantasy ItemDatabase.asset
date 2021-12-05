@@ -1699,14 +1699,14 @@ MonoBehaviour:
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
   actions:
-  - rid: 3509978797154238519
+  - rid: 2490231240616837489
   m_OverrideEquipPrefab: {fileID: 0}
   m_Region:
   - {fileID: 316844889573954113}
   references:
     version: 2
     RefIds:
-    - rid: 3509978797154238519
+    - rid: 2490231240616837489
       type: {class: CheckSkill, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CheckSkill

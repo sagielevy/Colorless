@@ -42,7 +42,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _LightColor: {r: 1, g: 0, b: 0, a: 1}
-    - _MousePos: {r: 521, g: 660, b: 1045, a: 588}
+    - _LightColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MousePos: {r: 515, g: 656, b: 1045, a: 588}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
