@@ -59,7 +59,6 @@ Shader "Unlit/Colorless"
                 fixed3 displayCol = lerp(intensity, col.rgb, _ColorblindFactor);
 
                 return fixed4(displayCol, col.a);
-
             }
             ENDCG
         }

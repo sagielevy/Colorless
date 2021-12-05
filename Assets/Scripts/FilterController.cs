@@ -20,6 +20,11 @@ public class FilterController : MonoBehaviour
         ChangeLightColor(Color.blue);
     }
 
+    public void SetWhiteColor()
+    {
+        ChangeLightColor(Color.white);
+    }
+
 
     private void ChangeLightColor(Color color)
     {
