@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FilterController : MonoBehaviour
 {
-    public UnityEngine.Rendering.Universal.Light2D light;
+    public Material filterMaterial;
 
     public void SetGreenFilter()
     {
@@ -23,6 +23,6 @@ public class FilterController : MonoBehaviour
 
     private void ChangeLightColor(Color color)
     {
-        light.color = color;
+        filterMaterial.SetColor("_LightColor", color);
     }
 }
