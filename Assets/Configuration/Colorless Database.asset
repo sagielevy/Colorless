@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4abab319188bac4a8515c585b13ba9d, type: 3}
-  m_Name: 
+  m_Name: None
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
-  name: None
+  name: Room1
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
 --- !u!114 &-6664072224869631566
@@ -219,6 +219,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &-608516783115705796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Test2
+  m_EditorClassIdentifier: 
+  m_Id: 3bd6a527-fbb9-4763-87d1-0248de5eb102
+  m_ItemName: Test2
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: e50febd6717db2b43a8fa67d1259fa02, type: 3}
+  m_Prefab: {fileID: 7130515781064518521, guid: 206bc47a10cd74eb6a068042a9804647, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 1, y: 2, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 4162398669960941618}
+  - {fileID: -608516783115705796}
+  - {fileID: 6472586216016713383}
   currencies: []
   raritys: []
   categories:
@@ -305,8 +362,8 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties:
-  - name: ID
-    typeIndex: 5
+  - name: OriginalPosition
+    typeIndex: 7
     stringValue: 
     intValue: 0
     floatValue: 0
@@ -314,7 +371,62 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 0, y: 0, z: 0}
+    vector3Value: {x: 2, y: 2, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &6472586216016713383
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Test3
+  m_EditorClassIdentifier: 
+  m_Id: 21135995-f124-4924-8cb6-53dadfd2439e
+  m_ItemName: Test3
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
+  m_Prefab: {fileID: 8578657258319566816, guid: 1a48bf20ffa174ef397ec4fe84bf3abf, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -1, y: -3, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &7371619099684580905
