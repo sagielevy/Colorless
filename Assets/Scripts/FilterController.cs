@@ -30,6 +30,11 @@ public class FilterController : MonoBehaviour
         filterMaterial.SetColor("_LightColor", color);
     }
 
+    public void SetColorlessFactor(float factor)
+    {
+        filterMaterial.SetFloat("_ColorlessFactor", factor);
+    }
+
     private void Update()
     {
         float mouseRatioX = Input.mousePosition.x;

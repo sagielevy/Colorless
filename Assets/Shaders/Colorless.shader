@@ -3,7 +3,7 @@ Shader "Unlit/Colorless"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _ColorblindFactor ("ColorblindFactor", Range(0.0, 1.0)) = 1.0
+        _ColorlessFactor ("ColorlessFactor", Range(0.0, 1.0)) = 1.0
         _LightColor("LightColor", Color) = (1, 1, 1, 0)
         _MousePos("MousePos", Vector) = (0, 0, 0, 0)
     }
@@ -38,7 +38,7 @@ Shader "Unlit/Colorless"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-            float _ColorblindFactor;
+            float _ColorlessFactor;
             fixed4 _LightColor;
             fixed4 _MousePos;
 
@@ -61,7 +61,7 @@ Shader "Unlit/Colorless"
 
                 fixed3 YPrime = fixed3(0.299, 0.5959, 0.2115);
                 fixed3 intensity = fixed3(1, 1, 1) * dot(col, YPrime);
-                fixed3 displayCol = lerp(intensity, col.rgb, _ColorblindFactor);
+                fixed3 displayCol = lerp(intensity, col.rgb, _ColorlessFactor);
 
                 float4 screenPos = ComputeScreenPos(i.vertex);
                 float2 screenUV = screenPos.xy / screenPos.w;

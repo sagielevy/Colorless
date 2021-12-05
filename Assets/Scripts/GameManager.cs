@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private LevelGenerator levelGenerator;
 
     [SerializeField] private ItemDatabase itemDatabase;
+    [SerializeField] private FilterController filterController;
     [SerializeField] private GameWinChecker gameWinChecker;
     [SerializeField] private TMPro.TextMeshProUGUI instructionsText;
 
@@ -22,5 +23,8 @@ public class GameManager : MonoBehaviour
 
         gameWinChecker.SetLevelData(level.ToHashSet());
         instructionsText.text = levelGenerator.GenerateLevelText(level);
+
+        filterController.SetColorlessFactor(0);
+        filterController.SetClearColor();
     }
 }

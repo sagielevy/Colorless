@@ -9,7 +9,7 @@ public class GameWinChecker : MonoBehaviour
 {
     [SerializeField] private ItemCollection userInventory;
     [SerializeField] private GameObject WinDisplay;
-    [SerializeField] private Material colorless;
+    [SerializeField] private FilterController filterController;
     [SerializeField] private float animateWinSpeed = 0.4f;
 
     private HashSet<string> levelData;
@@ -44,6 +44,7 @@ public class GameWinChecker : MonoBehaviour
         if (!hasWon) return;
 
         var factor = Mathf.Lerp(0, 1, (Time.time - wonTime) * animateWinSpeed);
-        colorless.SetFloat("_ColorblindFactor", factor);
+        filterController.SetClearColor();
+        filterController.SetColorlessFactor(factor);
     }
 }
