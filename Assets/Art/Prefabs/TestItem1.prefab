@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 463cfd5af11bf4344be0990433818a7e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -143,19 +143,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 2490231234240447456
-  - rid: 2490231234240447457
+  - rid: 2490231236538663165
+  - rid: 2490231236538663166
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 2490231234240447456
+    - rid: 2490231236538663165
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 2490231234240447457
+    - rid: 2490231236538663166
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup

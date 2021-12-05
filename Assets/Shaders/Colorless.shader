@@ -8,7 +8,9 @@ Shader "Unlit/Colorless"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
+        ZWrite Off
+        Blend SrcAlpha OneMinusSrcAlpha
         LOD 100
 
         Pass
