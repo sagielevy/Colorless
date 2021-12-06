@@ -13179,7 +13179,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8357318095490323337}
         m_TargetAssemblyTypeName: GameInstructionController, Assembly-CSharp
-        m_MethodName: ToggleGameInstructionsButton
+        m_MethodName: ToggleGameInstructions
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
