@@ -8,12 +8,34 @@ public class InventoryItemController : MonoBehaviour
 {
     private int currentRoomIndex = 0;
 
+    private int CurrentRoomIndex
+    {
+        get { return currentRoomIndex; }
+        set
+        {
+            currentRoomIndex = value;
+            ChangeDropMode();
+        }
+    }
+
+    private int itemsInFinalRoom = 0;
+
+    private int ItemsInFinalRoom
+    {
+        get { return itemsInFinalRoom; }
+        set
+        {
+            itemsInFinalRoom = value;
+            ChangeDropMode();
+        }
+    }
+
     [SerializeField] private GameObject room1;
     [SerializeField] private GameObject room2;
     [SerializeField] private GameObject roomFinal;
     [SerializeField] private ItemContainer itemContainer;
 
-    private int itemsInFinalRoom = 0;
+
 
     public void AddItem(CallbackEventData data)
     {
@@ -21,7 +43,7 @@ public class InventoryItemController : MonoBehaviour
 
         if (IsInFinalRoom())
         {
-            itemsInFinalRoom--;
+            ItemsInFinalRoom -= 1;
         }
     }
 
@@ -50,13 +72,13 @@ public class InventoryItemController : MonoBehaviour
 
         if (IsInFinalRoom())
         {
-            itemsInFinalRoom++;
+            ItemsInFinalRoom += 1;
         }
     }
 
     private bool IsInFinalRoom()
     {
-        return currentRoomIndex == GameStateManager.RoomFinalIndex;
+        return CurrentRoomIndex == GameStateManager.RoomFinalIndex;
     }
 
     private GameObject GetRoom()
@@ -77,18 +99,12 @@ public class InventoryItemController : MonoBehaviour
 
     public void ChangedRoom(int roomIndex)
     {
-        currentRoomIndex = roomIndex;
-        ChangeDropMode();
+        CurrentRoomIndex = roomIndex;
     }
 
     private void ChangeDropMode()
     {
-        if (IsInFinalRoom() && itemsInFinalRoom >= GameStateManager.ItemGoalCount)
-        {
-            itemContainer.CanDropItems = false;
-        } else
-        {
-            itemContainer.CanDropItems = true;
-        }
+        itemContainer.CanDropItems =
+            !IsInFinalRoom() || itemsInFinalRoom < GameStateManager.ItemGoalCount;
     }
 }
