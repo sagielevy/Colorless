@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveable: 1
   m_Items:
-  - {fileID: 6842555577092299646, guid: 0dce98bb0548145aabfd83d21ffa37c4, type: 2}
+  - {fileID: -9196442783936666578, guid: 0dce98bb0548145aabfd83d21ffa37c4, type: 2}
   m_Amounts: 01000000
   m_Modifiers:
   - modifiers: []
@@ -127,19 +127,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 3509978815762006708
-  - rid: 3509978815762006709
+  - rid: 2490231258389414754
+  - rid: 2490231258389414755
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 3509978815762006708
+    - rid: 2490231258389414754
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 3509978815762006709
+    - rid: 2490231258389414755
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup
