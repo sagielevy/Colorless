@@ -64,7 +64,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 8.38, y: -3.26, z: 0}
+    vector3Value: {x: 3.86, y: -1.62, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: OriginalRoomIndex
