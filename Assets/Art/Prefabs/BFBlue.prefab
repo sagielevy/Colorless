@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6243511944265701263}
   - component: {fileID: 1969141274795903913}
   - component: {fileID: 7556462077813362882}
+  - component: {fileID: 1356686664}
   m_Layer: 0
   m_Name: BFBlue
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589812554585419838}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.07, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -143,19 +144,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 2490231240616837508
-  - rid: 2490231240616837509
+  - rid: 2490231255585784078
+  - rid: 2490231255585784079
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 2490231240616837508
+    - rid: 2490231255585784078
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 2490231240616837509
+    - rid: 2490231255585784079
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup
@@ -192,3 +193,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1356686664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589812554585419838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3966da4c5c9462597ba8366c0a578a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedItems: {fileID: 0}

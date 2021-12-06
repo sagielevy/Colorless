@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4816986041931910973}
   - component: {fileID: 1094372296975799067}
   - component: {fileID: 8980675157723367536}
+  - component: {fileID: 1085065056}
   m_Layer: 0
   m_Name: BFRed
   m_TagString: Untagged
@@ -143,19 +144,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 2490231240616837492
-  - rid: 2490231240616837493
+  - rid: 2490231255585784098
+  - rid: 2490231255585784099
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 2490231240616837492
+    - rid: 2490231255585784098
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 2490231240616837493
+    - rid: 2490231255585784099
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup
@@ -192,3 +193,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1085065056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041073069457500300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3966da4c5c9462597ba8366c0a578a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedItems: {fileID: 0}

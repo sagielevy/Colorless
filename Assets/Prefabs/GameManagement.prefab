@@ -46,11 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDatabase: {fileID: 11400000, guid: 0dce98bb0548145aabfd83d21ffa37c4, type: 2}
-  inventoryItemCollection: {fileID: 0}
   filterController: {fileID: 0}
   gameWinChecker: {fileID: 7160738449714280326}
   instructionsText: {fileID: 0}
-  itemContainer: {fileID: 0}
+  room1: {fileID: 0}
+  room2: {fileID: 0}
+  roomFinal: {fileID: 0}
 --- !u!114 &7160738449714280326
 MonoBehaviour:
   m_ObjectHideFlags: 0

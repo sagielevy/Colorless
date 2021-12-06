@@ -9,14 +9,13 @@ public class GameStateManager
     private const int itemCount = 4;
 
     private List<string> levelData;
-    private ItemCollection previousRoomItemCollection;
+    //private ItemCollection previousRoomItemCollection;
 
     public GameStateManager(ItemDatabase itemDatabase, FilterController filterController,
-        GameWinChecker gameWinChecker, TMPro.TextMeshProUGUI instructionsText,
-        ItemCollection roomItemCollection)
+        GameWinChecker gameWinChecker, TMPro.TextMeshProUGUI instructionsText)
     {
         PlayerPrefs.DeleteAll();
-        previousRoomItemCollection = roomItemCollection;
+        //previousRoomItemCollection = roomItemCollection;
 
         var levelGenerator = new LevelGenerator();
 
@@ -24,29 +23,34 @@ public class GameStateManager
 
         levelData = levelGenerator.GenerateLevel(itemNames, itemCount);
 
-        gameWinChecker.SetLevelData(levelData.ToHashSet());
-        instructionsText.text = new LevelGenerator().GenerateLevelText(levelData);
-
-        filterController.SetColorlessFactor(0);
-        filterController.SetClearColor();
+        EnterRoom(filterController, gameWinChecker, instructionsText);
     }
 
-    public void StartLevel(FilterController filterController,
-        GameWinChecker gameWinChecker, TMPro.TextMeshProUGUI instructionsText,
-        ItemCollection roomItemCollection)
+    public void EnterRoom(FilterController filterController,
+        GameWinChecker gameWinChecker, TMPro.TextMeshProUGUI instructionsText)
     {
         gameWinChecker.SetLevelData(levelData.ToHashSet());
         instructionsText.text = new LevelGenerator().GenerateLevelText(levelData);
 
         filterController.SetColorlessFactor(0);
         filterController.SetClearColor();
+    }
+
+    //public void StartLevel(FilterController filterController,
+    //    GameWinChecker gameWinChecker, TMPro.TextMeshProUGUI instructionsText)
+    //{
+    //    gameWinChecker.SetLevelData(levelData.ToHashSet());
+    //    instructionsText.text = new LevelGenerator().GenerateLevelText(levelData);
+
+    //    filterController.SetColorlessFactor(0);
+    //    filterController.SetClearColor();
 
         // Migrate items to new scene and then reference new collection.
-        foreach (var item in previousRoomItemCollection)
-        {
-            roomItemCollection.Add(item);
-        }
+        //foreach (var item in previousRoomItemCollection)
+        //{
+        //    roomItemCollection.Add(item);
+        //}
 
-        previousRoomItemCollection = roomItemCollection;
-    }
+        //previousRoomItemCollection = roomItemCollection;
+    //}
 }
