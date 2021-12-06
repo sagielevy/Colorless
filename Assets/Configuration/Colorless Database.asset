@@ -131,7 +131,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -8, y: -4.61, z: 0}
+    vector3Value: {x: -8, y: -4.41, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -289,7 +289,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -5.82, y: -2.42, z: 0}
+    vector3Value: {x: 7.72, y: -4.61, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -307,7 +307,7 @@ MonoBehaviour:
   - name: OriginalRoomIndex
     typeIndex: 5
     stringValue: 
-    intValue: 1
+    intValue: 0
     floatValue: 0
     colorValue: {r: 0, g: 0, b: 0, a: 0}
     boolValue: 0
@@ -919,7 +919,6 @@ MonoBehaviour:
   - {fileID: -5778751113731850454}
   - {fileID: 6472586216016713383}
   - {fileID: -8365672738583038450}
-  - {fileID: 1311017124147289044}
   - {fileID: -3201273713965119927}
   - {fileID: 1689613186483839733}
   - {fileID: -9073004910968629694}
@@ -939,85 +938,6 @@ MonoBehaviour:
   - {fileID: -4266261863886437094}
   - {fileID: 7371619099684580905}
   - {fileID: 3502729804850136454}
---- !u!114 &1311017124147289044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Red Donut
-  m_EditorClassIdentifier: 
-  m_Id: 42e523b8-8e0b-4eac-bda1-1144f267ed78
-  m_ItemName: Red Donut
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 719ef1e21d52b4bf4b1bd7b291c952a6, type: 3}
-  m_Prefab: {fileID: 7583862665613226055, guid: 839a38cd1c2728a4e9b3e2554312ab72, type: 3}
-  m_Description: 
-  m_Category: {fileID: -7951129461597765027}
-  m_IsSellable: 1
-  m_BuyPrice: 0
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: 0}
-  m_SellPrice: 0
-  m_SellCurrency: {fileID: 0}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties:
-  - name: OriginalPosition
-    typeIndex: 7
-    stringValue: 
-    intValue: 0
-    floatValue: 0
-    colorValue: {r: 0, g: 0, b: 0, a: 0}
-    boolValue: 0
-    objectReferenceValue: {fileID: 0}
-    vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -6.22, y: -4.12, z: 0}
-    show: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: FinalRoomPosition
-    typeIndex: 7
-    stringValue: 
-    intValue: 0
-    floatValue: 0
-    colorValue: {r: 0, g: 0, b: 0, a: 0}
-    boolValue: 0
-    objectReferenceValue: {fileID: 0}
-    vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 4.92, y: -3.04, z: 0}
-    show: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: OriginalRoomIndex
-    typeIndex: 5
-    stringValue: 
-    intValue: 1
-    floatValue: 0
-    colorValue: {r: 0, g: 0, b: 0, a: 0}
-    boolValue: 0
-    objectReferenceValue: {fileID: 0}
-    vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 5, y: 4, z: 0}
-    show: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1689613186483839733
 MonoBehaviour:
   m_ObjectHideFlags: 1

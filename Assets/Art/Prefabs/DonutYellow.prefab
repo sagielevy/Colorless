@@ -127,19 +127,19 @@ MonoBehaviour:
   key: 102
   actionTemplate: {fileID: 0}
   actions:
-  - rid: 3509978815762006424
-  - rid: 3509978815762006425
+  - rid: 2490231262100848844
+  - rid: 2490231262100848845
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
-    - rid: 3509978815762006424
+    - rid: 2490231262100848844
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 3509978815762006425
+    - rid: 2490231262100848845
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.Pickup
@@ -158,8 +158,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.38, y: 3.85, z: 0.2}
+  m_Center: {x: -0.21, y: 0.4, z: 0}
 --- !u!54 &8980675157723367536
 Rigidbody:
   m_ObjectHideFlags: 0
