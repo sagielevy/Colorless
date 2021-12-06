@@ -6,6 +6,19 @@ public class FilterController : MonoBehaviour
 {
     public Material filterMaterial;
 
+    private static FilterController Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        } else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void SetGreenFilter()
     {
         ChangeLightColor(Color.green);

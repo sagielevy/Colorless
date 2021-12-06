@@ -10,13 +10,15 @@ public class InventoryItemController : MonoBehaviour
     {
         var itemData = data as ItemEventData;
 
-
+        // TODO what's needed here?
     }
 
     public void RemoveItem(CallbackEventData data)
     {
         // Happens first on drop out.
         var itemData = data as ItemEventData;
+
+        // TODO what's needed here?
     }
 
     public void DropItem(CallbackEventData data)

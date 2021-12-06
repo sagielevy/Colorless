@@ -8,7 +8,7 @@ using System.Linq;
 public class GameWinChecker : MonoBehaviour
 {
     [SerializeField] private ItemCollection userInventory;
-    [SerializeField] private GameObject WinDisplay;
+    [SerializeField] private GameObject winDisplay;
     [SerializeField] private FilterController filterController;
     [SerializeField] private float animateWinSpeed = 0.4f;
 
@@ -19,6 +19,14 @@ public class GameWinChecker : MonoBehaviour
     public void SetLevelData(HashSet<string> levelData)
     {
         this.levelData = levelData;
+    }
+
+    public void UpdateLevel(ItemCollection userInventory,
+        GameObject winDisplay, FilterController filterController)
+    {
+        this.userInventory = userInventory;
+        this.winDisplay = winDisplay;
+        this.filterController = filterController;
     }
 
     // Version 0: check that all correct items have been picked up.
@@ -35,7 +43,7 @@ public class GameWinChecker : MonoBehaviour
         {
             hasWon = true;
             wonTime = Time.time;
-            WinDisplay.SetActive(true);
+            winDisplay.SetActive(true);
         }
     }
 
