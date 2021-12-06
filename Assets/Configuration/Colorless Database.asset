@@ -52,7 +52,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -2.02, y: -2.81, z: 0}
+    vector3Value: {x: -7.98, y: 2.35, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -70,7 +70,7 @@ MonoBehaviour:
   - name: OriginalRoomIndex
     typeIndex: 5
     stringValue: 
-    intValue: 0
+    intValue: 1
     floatValue: 0
     colorValue: {r: 0, g: 0, b: 0, a: 0}
     boolValue: 0
@@ -739,7 +739,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 1, y: 3, z: 0}
+    vector3Value: {x: -4.27, y: -4.16, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -991,7 +991,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -7.85, y: 0.26, z: 0}
+    vector3Value: {x: -6.22, y: -4.12, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1070,7 +1070,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -5.56, y: 2.9, z: 0}
+    vector3Value: {x: -4.78, y: 0.71, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1245,7 +1245,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -5, y: 0.66, z: 0}
+    vector3Value: {x: 1.02, y: 2.01, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
