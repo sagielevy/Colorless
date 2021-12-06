@@ -38,12 +38,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorblindFactor: 0
-    - _ColorlessFactor: 0
+    - _ColorlessFactor: 1
     - _EnableExternalAlpha: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MousePos: {r: 984.8721, g: 1243.6029, b: 1920, a: 1080}
+    - _MousePos: {r: 614, g: 712, b: 1138, a: 640}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
