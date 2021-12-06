@@ -79,6 +79,92 @@ MonoBehaviour:
     vector3Value: {x: -4, y: 2, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-8858907630710808045
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Green Sock
+  m_EditorClassIdentifier: 
+  m_Id: 7023f659-c561-4c1e-9db7-38ca4741b0a8
+  m_ItemName: Green Sock
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f954142651f4d4abe8e4f2abc20ef443, type: 3}
+  m_Prefab: {fileID: 9134884649885085521, guid: 1898844c8b6528c42bed3b54acf9db77, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-8365672738583038450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Pink Jar
+  m_EditorClassIdentifier: 
+  m_Id: 66f5845a-b488-4eb7-9a21-b957b13783d1
+  m_ItemName: Pink Jar
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f2b4d63fd5b684a5aa1da7e3924a36df, type: 3}
+  m_Prefab: {fileID: 877629016435240898, guid: 4f554af49e9d659408d67a15f33e79e4, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-7951129461597765027
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +198,49 @@ MonoBehaviour:
   queriesHitTriggers: 0
   debugMessages: 1
   showAllComponents: 0
+--- !u!114 &-6388559296897080164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Blue Sock
+  m_EditorClassIdentifier: 
+  m_Id: d4160292-76ba-45e3-8fa2-a9ed3c76b704
+  m_ItemName: Blue Sock
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f954142651f4d4abe8e4f2abc20ef443, type: 3}
+  m_Prefab: {fileID: 1979843246905772317, guid: f853a616734a9bb47b7339daaa55a510, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-5778751113731850454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,6 +736,10 @@ MonoBehaviour:
   - {fileID: -3901263345593252194}
   - {fileID: 1689613186483839733}
   - {fileID: -9073004910968629694}
+  - {fileID: -8365672738583038450}
+  - {fileID: -6388559296897080164}
+  - {fileID: -8858907630710808045}
+  - {fileID: 4477358303681490239}
   currencies: []
   raritys: []
   categories:
@@ -873,6 +1006,49 @@ MonoBehaviour:
     vector3Value: {x: 2, y: 2, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &4477358303681490239
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Pink Sock
+  m_EditorClassIdentifier: 
+  m_Id: 2b602d2d-c80b-4853-968e-04a0f140a33c
+  m_ItemName: Pink Sock
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f954142651f4d4abe8e4f2abc20ef443, type: 3}
+  m_Prefab: {fileID: 5090669573067430115, guid: 45c3c0821cb061540827f5a6e7076c44, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &6472586216016713383
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -952,6 +1128,49 @@ MonoBehaviour:
     vector3Value: {x: -1, y: -3, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &6842555577092299646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Id: 5d13c430-7b8c-4540-a919-5b66b0fa0a25
+  m_ItemName: New Item
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 0}
+  m_Prefab: {fileID: 0}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &7371619099684580905
 MonoBehaviour:
   m_ObjectHideFlags: 1
