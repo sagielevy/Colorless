@@ -121,7 +121,43 @@ MonoBehaviour:
   m_CraftingModifier:
     modifiers: []
   ingredients: []
-  properties: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-8365672738583038450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,7 +200,43 @@ MonoBehaviour:
   m_CraftingModifier:
     modifiers: []
   ingredients: []
-  properties: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-7951129461597765027
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,7 +312,43 @@ MonoBehaviour:
   m_CraftingModifier:
     modifiers: []
   ingredients: []
-  properties: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-5778751113731850454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -736,8 +844,8 @@ MonoBehaviour:
   - {fileID: 1689613186483839733}
   - {fileID: -3901263345593252194}
   - {fileID: -9073004910968629694}
-  - {fileID: -8365672738583038450}
   - {fileID: -6388559296897080164}
+  - {fileID: -8365672738583038450}
   - {fileID: -8858907630710808045}
   - {fileID: 4477358303681490239}
   currencies: []
@@ -1048,7 +1156,43 @@ MonoBehaviour:
   m_CraftingModifier:
     modifiers: []
   ingredients: []
-  properties: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &6472586216016713383
 MonoBehaviour:
   m_ObjectHideFlags: 1
