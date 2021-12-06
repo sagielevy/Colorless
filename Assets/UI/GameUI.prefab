@@ -4562,7 +4562,6 @@ GameObject:
   - component: {fileID: 4715611350956406338}
   - component: {fileID: 4715611350956406341}
   - component: {fileID: 4715611350956406339}
-  - component: {fileID: 4244776563281460067}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -4626,9 +4625,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameWinChecker, Assembly-CSharp
-          m_MethodName: CheckForWin
-          m_Mode: 1
+          m_TargetAssemblyTypeName: InventoryItemController, Assembly-CSharp
+          m_MethodName: AddItem
+          m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4642,7 +4641,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: DropItemController, Assembly-CSharp
+          m_TargetAssemblyTypeName: InventoryItemController, Assembly-CSharp
           m_MethodName: RemoveItem
           m_Mode: 0
           m_Arguments:
@@ -4658,7 +4657,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: DropItemController, Assembly-CSharp
+          m_TargetAssemblyTypeName: InventoryItemController, Assembly-CSharp
           m_MethodName: DropItem
           m_Mode: 0
           m_Arguments:
@@ -4693,13 +4692,12 @@ MonoBehaviour:
   m_CanDropItems: 1
   m_CanReferenceItems: 1
   m_CanSellItems: 0
-  m_CanUseItems: 1
+  m_CanUseItems: 0
   m_UseContextMenu: 0
   m_ShowTooltips: 0
-  m_MoveUsedItem: 1
+  m_MoveUsedItem: 0
   moveItemConditions: []
-  restrictions:
-  - {fileID: 4244776563281460067}
+  restrictions: []
 --- !u!114 &4715611350956406339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4727,20 +4725,6 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4244776563281460067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4715611350956406343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7f10d0457b7b0541a4d7bdc91b96112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Categories: []
-  invert: 1
 --- !u!1 &4715611351156776720
 GameObject:
   m_ObjectHideFlags: 0
@@ -12397,7 +12381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructions: {fileID: 961854816162175210}
-  toggle: {fileID: 0}
+  toggle: {fileID: 5454272844083070550}
 --- !u!1 &8782027039003784589
 GameObject:
   m_ObjectHideFlags: 0

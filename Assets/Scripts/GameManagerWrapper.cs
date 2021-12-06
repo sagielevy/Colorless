@@ -23,7 +23,7 @@ public class GameManagerWrapper : MonoBehaviour
     public static GameStateManager GetInstance { get { return Instance; } }
 
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -48,21 +48,21 @@ public class GameManagerWrapper : MonoBehaviour
     {
         switch (roomIndex)
         {
-            case 0:
+            case GameStateManager.Room1Index:
                 room1.SetActive(true);
                 room2.SetActive(false);
                 roomFinal.SetActive(false);
                 GetInstance.EnterRoom(filterController, gameWinChecker,
                     instructionsText);
                 break;
-            case 1:
+            case GameStateManager.Room2Index:
                 room1.SetActive(false);
                 room2.SetActive(true);
                 roomFinal.SetActive(false);
                 GetInstance.EnterRoom(filterController, gameWinChecker,
                     instructionsText);
                 break;
-            case 2:
+            case GameStateManager.RoomFinalIndex:
                 room1.SetActive(false);
                 room2.SetActive(false);
                 roomFinal.SetActive(true);

@@ -6,7 +6,11 @@ using UnityEngine;
 
 public class GameStateManager
 {
-    private const int itemCount = 4;
+    public const int Room1Index = 0;
+    public const int Room2Index = 1;
+    public const int RoomFinalIndex = 2;
+
+    public const int ItemGoalCount = 4;
 
     private List<string> levelData;
     //private ItemCollection previousRoomItemCollection;
@@ -21,7 +25,7 @@ public class GameStateManager
 
         var itemNames = itemDatabase.items.Select(x => x.name).ToList();
 
-        levelData = levelGenerator.GenerateLevel(itemNames, itemCount);
+        levelData = levelGenerator.GenerateLevel(itemNames, ItemGoalCount);
 
         EnterRoom(filterController, gameWinChecker, instructionsText);
     }

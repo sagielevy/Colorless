@@ -36,6 +36,11 @@ namespace DevionGames.InventorySystem.Configuration
             text = "{0} is full!"
         };
 
+        public NotificationOptions roomFull = new NotificationOptions()
+        {
+            text = "Tree is full of decorations!"
+        };
+
         public NotificationOptions failedRestriction = new NotificationOptions()
         {
             text = "{0} can't be added to {1}."

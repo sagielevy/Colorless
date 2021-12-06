@@ -138,7 +138,7 @@ namespace DevionGames.InventorySystem
         public bool CanDragOut
         {
             get { return this.m_CanDragOut; }
-            protected set { this.m_CanDragOut = value; }
+            set { this.m_CanDragOut = value; }
         }
 
         [Tooltip("Can the items be dropped from this container to ground.")]
@@ -150,7 +150,7 @@ namespace DevionGames.InventorySystem
         public bool CanDropItems
         {
             get { return this.m_CanDropItems; }
-            protected set { this.m_CanDropItems = value; }
+            set { this.m_CanDropItems = value; }
         }
 
         [Tooltip("Can the items be referenced from this container.")]
