@@ -862,6 +862,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff13d7ec65dab44f3bb0958cc2992aaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1994266938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4715611350956406341, guid: cf4fef3b6f2f94e84be34698449b4d5a, type: 3}
+  m_PrefabInstance: {fileID: 4349323927792005610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb22b138ec68f14884edf560442aaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2004510607 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7160738449714280326, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
@@ -881,7 +892,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b9f010011a34d13aca260b1c1129f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f810ed39e22648808babbbe3b0a983d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &3158319876357119195 stripped
@@ -1758,10 +1769,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7160738449714280326, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
-      propertyPath: WinDisplay
-      value: 
-      objectReference: {fileID: 4349323927792005612}
-    - target: {fileID: 7160738449714280326, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
       propertyPath: winDisplay
       value: 
       objectReference: {fileID: 4349323927792005612}
@@ -1822,6 +1829,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160738449714280345, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
+      propertyPath: itemContainer
+      value: 
+      objectReference: {fileID: 1994266938}
+    - target: {fileID: 7160738449714280345, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
       propertyPath: filterController
       value: 
       objectReference: {fileID: 1469525347}
@@ -1829,6 +1840,10 @@ PrefabInstance:
       propertyPath: instructionsText
       value: 
       objectReference: {fileID: 4349323927792005611}
+    - target: {fileID: 7160738449714280345, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
+      propertyPath: inventoryItemCollection
+      value: 
+      objectReference: {fileID: 1018518317}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c6f927c98373439b8945c302bbdd9e8, type: 3}
 --- !u!1001 &7339769047507754918
