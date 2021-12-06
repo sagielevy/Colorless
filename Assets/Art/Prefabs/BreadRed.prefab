@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4014198780437305334}
   - component: {fileID: 8810146993220160464}
   - component: {fileID: 706457885665562811}
-  - component: {fileID: 1533288789}
   m_Layer: 0
   m_Name: BreadRed
   m_TagString: Untagged
@@ -193,16 +192,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &1533288789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7583862665613226055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3966da4c5c9462597ba8366c0a578a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectedItems: {fileID: 0}
