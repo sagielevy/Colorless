@@ -4,6 +4,7 @@ using DevionGames;
 using DevionGames.InventorySystem;
 using UnityEngine;
 
+[RequireComponent(typeof(ItemCollection))]
 public class InventoryItemController : MonoBehaviour
 {
     private int currentRoomIndex = 0;
@@ -18,24 +19,17 @@ public class InventoryItemController : MonoBehaviour
         }
     }
 
-    private int itemsInFinalRoom = 0;
-
-    private int ItemsInFinalRoom
-    {
-        get { return itemsInFinalRoom; }
-        set
-        {
-            itemsInFinalRoom = value;
-            ChangeDropMode();
-        }
-    }
+    public ItemCollection finalRoom;
 
     [SerializeField] private GameObject room1;
     [SerializeField] private GameObject room2;
     [SerializeField] private GameObject roomFinal;
     [SerializeField] private ItemContainer itemContainer;
-
-
+    
+    private void Start()
+    {
+        finalRoom = GetComponent<ItemCollection>();
+    }
 
     public void AddItem(CallbackEventData data)
     {
@@ -43,7 +37,8 @@ public class InventoryItemController : MonoBehaviour
 
         if (IsInFinalRoom())
         {
-            ItemsInFinalRoom -= 1;
+            finalRoom.Remove(itemData.item);
+            ChangeDropMode();
         }
     }
 
@@ -72,7 +67,8 @@ public class InventoryItemController : MonoBehaviour
 
         if (IsInFinalRoom())
         {
-            ItemsInFinalRoom += 1;
+            finalRoom.Add(itemData.item);
+            ChangeDropMode();
         }
     }
 
@@ -105,6 +101,6 @@ public class InventoryItemController : MonoBehaviour
     private void ChangeDropMode()
     {
         itemContainer.CanDropItems =
-            !IsInFinalRoom() || itemsInFinalRoom < GameStateManager.ItemGoalCount;
+            !IsInFinalRoom() || finalRoom.Count < GameStateManager.ItemGoalCount;
     }
 }

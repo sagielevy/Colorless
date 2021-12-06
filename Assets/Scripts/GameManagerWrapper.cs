@@ -10,7 +10,7 @@ public class GameManagerWrapper : MonoBehaviour
     private static GameStateManager Instance;
 
     [SerializeField] private ItemDatabase itemDatabase;
-    //[SerializeField] private ItemCollection inventoryItemCollection;
+    [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private FilterController filterController;
 
     [SerializeField] private GameWinChecker gameWinChecker;
@@ -30,19 +30,7 @@ public class GameManagerWrapper : MonoBehaviour
             Instance = new GameStateManager(itemDatabase, filterController,
                 gameWinChecker, instructionsText);
         }
-        //else
-        //{
-            //GetInstance.EnterRoom(filterController, gameWinChecker,
-            //    instructionsText);
-
-            //ItemContainer.AddItems("Inventory", inventoryItemCollection.ToArray());
-        //}
     }
-
-    //public void MoveToRoomScene(string roomName)
-    //{
-    //    SceneManager.LoadScene(roomName);
-    //}
 
     public void MoveToRoom(int roomIndex)
     {
