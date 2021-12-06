@@ -9,6 +9,7 @@ public class GameWinChecker : MonoBehaviour
 {
     [SerializeField] private ItemCollection finalRoom;
     [SerializeField] private GameObject winDisplay;
+    [SerializeField] private TMPro.TextMeshProUGUI instructionsText;
     [SerializeField] private FilterController filterController;
     [SerializeField] private float animateWinSpeed = 0.4f;
 
@@ -50,6 +51,7 @@ public class GameWinChecker : MonoBehaviour
     {
         if (!hasWon) return;
 
+        instructionsText.enabled = false;
         var factor = Mathf.Lerp(0, 1, (Time.time - wonTime) * animateWinSpeed);
         filterController.SetClearColor();
         filterController.SetColorlessFactor(factor);
