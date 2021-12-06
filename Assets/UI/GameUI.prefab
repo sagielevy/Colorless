@@ -5486,7 +5486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4715611352387335712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9786,7 +9786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5001, y: -1}
+  m_AnchoredPosition: {x: -2.5001068, y: -1}
   m_SizeDelta: {x: -4.9999, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5267254045524601298
@@ -9819,12 +9819,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -12292,6 +12292,8 @@ GameObject:
   - component: {fileID: 2759045432974626438}
   - component: {fileID: 5454272844083070550}
   - component: {fileID: 8357318095490323337}
+  - component: {fileID: 6705364368321748149}
+  - component: {fileID: 1224506966774912334}
   m_Layer: 5
   m_Name: ToggleGameInstructions
   m_TagString: Untagged
@@ -12317,8 +12319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 666.4998, y: -422.8123}
-  m_SizeDelta: {x: 184.9996, y: 35.6246}
+  m_AnchoredPosition: {x: 594, y: -387}
+  m_SizeDelta: {x: 380.56, y: 73.584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5454272844083070550
 MonoBehaviour:
@@ -12394,6 +12396,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructions: {fileID: 961854816162175210}
   toggle: {fileID: 5454272844083070550}
+--- !u!222 &6705364368321748149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221267120039765823}
+  m_CullTransparentMesh: 1
+--- !u!114 &1224506966774912334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221267120039765823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8782027039003784589
 GameObject:
   m_ObjectHideFlags: 0
