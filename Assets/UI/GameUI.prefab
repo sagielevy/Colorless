@@ -4690,7 +4690,7 @@ MonoBehaviour:
   m_CloseSound: {fileID: 0}
   m_Focus: 1
   m_DeactivateOnClose: 1
-  m_ShowAndHideCursor: 1
+  m_ShowAndHideCursor: 0
   m_CloseOnMove: 1
   m_Deactivate: 306
   m_FocusPlayer: 1
