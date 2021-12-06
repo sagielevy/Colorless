@@ -28,9 +28,25 @@ public class FilterController : MonoBehaviour
     {
         ChangeLightColor(Color.red);
     }
+
     public void SetBlueFilter()
     {
         ChangeLightColor(Color.blue);
+    }
+
+    public void SetCyanFilter()
+    {
+        ChangeLightColor(Color.cyan);
+    }
+
+    public void SetMagentaFilter()
+    {
+        ChangeLightColor(Color.magenta);
+    }
+
+    public void SetYellowFilter()
+    {
+        ChangeLightColor(Color.yellow);
     }
 
     public void SetClearColor()

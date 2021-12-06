@@ -57,13 +57,16 @@ public class InventoryItemController : MonoBehaviour
 
 
         var originalPos = itemData.item.FindProperty("OriginalPosition").vector3Value;
+        var originalRoomInex = itemData.item.FindProperty("OriginalRoomIndex").intValue;
         var finalRoomPos = itemData.item.FindProperty("FinalRoomPosition").vector3Value;
 
         itemData.gameObject.transform.position = IsInFinalRoom() ?
             finalRoomPos :
             originalPos;
 
-        itemData.gameObject.transform.parent = GetRoom().transform;
+        var roomIndex = IsInFinalRoom() ? GameStateManager.RoomFinalIndex : originalRoomInex;
+
+        itemData.gameObject.transform.parent = GetRoom(roomIndex).transform;
 
         if (IsInFinalRoom())
         {
@@ -77,9 +80,9 @@ public class InventoryItemController : MonoBehaviour
         return CurrentRoomIndex == GameStateManager.RoomFinalIndex;
     }
 
-    private GameObject GetRoom()
+    private GameObject GetRoom(int roomIndex)
     {
-        switch (currentRoomIndex)
+        switch (roomIndex)
         {
             case GameStateManager.Room1Index:
                 return room1;
