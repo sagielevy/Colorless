@@ -25,4 +25,10 @@ public class GameInstructionController : MonoBehaviour
 
         instructions.SetActive(toggle.isOn);
     }
+
+    public void TurnOffInstructions()
+    {
+        toggle.isOn = false;
+        instructions.SetActive(false);
+    }
 }

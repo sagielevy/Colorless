@@ -9,8 +9,9 @@ public class GameWinChecker : MonoBehaviour
 {
     [SerializeField] private ItemCollection finalRoom;
     [SerializeField] private GameObject winDisplay;
-    [SerializeField] private GameObject instructions;
+    [SerializeField] private GameInstructionController gameInstructionController;
     [SerializeField] private FilterController filterController;
+    [SerializeField] private Canvas RoomCanvas;
     [SerializeField] private float animateWinSpeed = 0.4f;
 
     private HashSet<string> levelData;
@@ -51,7 +52,8 @@ public class GameWinChecker : MonoBehaviour
     {
         if (!hasWon) return;
 
-        instructions.SetActive(false);
+        RoomCanvas.enabled = false;
+        gameInstructionController.TurnOffInstructions();
         var factor = Mathf.Lerp(0, 1, (Time.time - wonTime) * animateWinSpeed);
         filterController.SetClearColor();
         filterController.SetColorlessFactor(factor);
