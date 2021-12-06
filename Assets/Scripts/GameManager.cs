@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private List<string> levelData;
 
     [SerializeField] private ItemDatabase itemDatabase;
+    [SerializeField] private ItemCollection itemCollection;
     [SerializeField] private FilterController filterController;
 
     [SerializeField] private GameWinChecker gameWinChecker;

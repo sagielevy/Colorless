@@ -7184,7 +7184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5905089536006529209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7743,9 +7743,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5905089536848854289}
   m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &5905089536848854291
 MonoBehaviour:
@@ -7810,7 +7810,7 @@ MonoBehaviour:
           m_CallState: 2
   name: Inventory
   priority: 0
-  m_KeyCode: 105
+  m_KeyCode: 0
   m_EaseType: 28
   m_Duration: 0.7
   m_IgnoreTimeScale: 1
@@ -8091,7 +8091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
