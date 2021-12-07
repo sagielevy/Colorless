@@ -20,6 +20,8 @@ public class GameManagerWrapper : MonoBehaviour
     [SerializeField] private GameObject room2;
     [SerializeField] private GameObject roomFinal;
 
+    [SerializeField] private Material colorlessMaterial;
+
     public static GameStateManager GetInstance { get { return Instance; } }
 
 
@@ -29,6 +31,15 @@ public class GameManagerWrapper : MonoBehaviour
         {
             Instance = new GameStateManager(itemDatabase, filterController,
                 gameWinChecker, instructionsText);
+
+#if UNITY_EDITOR
+            colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, -1, 0, 0));
+#elif UNITY_WEBGL
+            // Don't flip for web.
+            colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, 1, 0, 0));
+#else
+            colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, -1, 0, 0));
+#endif
         }
     }
 

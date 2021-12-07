@@ -6,6 +6,7 @@ Shader "Unlit/Colorless"
         _ColorlessFactor ("ColorlessFactor", Range(0.0, 1.0)) = 1.0
         _LightColor("LightColor", Color) = (1, 1, 1, 0)
         _MousePos("MousePos", Vector) = (0, 0, 0, 0)
+        _MouseOrientation("MouseOrientation", Vector) = (1, -1, 0, 0)
     }
     SubShader
     {
@@ -40,7 +41,8 @@ Shader "Unlit/Colorless"
             float4 _MainTex_ST;
             float _ColorlessFactor;
             fixed4 _LightColor;
-            fixed4 _MousePos;
+            float4 _MousePos;
+            float4 _MouseOrientation;
 
             #define YPrime fixed3(0.299, 0.5959, 0.2115)
 
@@ -65,7 +67,9 @@ Shader "Unlit/Colorless"
                 float2 screenUV = screenPos.xy / screenPos.w;
 
                 // Flip and scale by 0.5 to account for NDC.
-                float2 mouseCoords = _MousePos.xy * float2(1, -1) * 0.5;
+                float2 orientation = _MouseOrientation.xy;
+                float2 mouseCoords = _MousePos.xy * orientation * 0.5;
+
                 float distFromMouse = length(screenUV - mouseCoords);
 
                 fixed3 displayCol;
