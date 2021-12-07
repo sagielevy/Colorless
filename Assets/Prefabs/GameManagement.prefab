@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDatabase: {fileID: 11400000, guid: 0dce98bb0548145aabfd83d21ffa37c4, type: 2}
-  finalRoomItems: {fileID: 0}
   filterController: {fileID: 0}
   gameWinChecker: {fileID: 7160738449714280326}
   instructionsText: {fileID: 0}
@@ -66,8 +65,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26047f39f4a5741cd93498ad02872ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalRoom: {fileID: 0}
+  finalRoomItems: {fileID: 0}
   winDisplay: {fileID: 0}
+  failDisplay: {fileID: 0}
   gameInstructionController: {fileID: 0}
   filterController: {fileID: 0}
   RoomCanvas: {fileID: 0}

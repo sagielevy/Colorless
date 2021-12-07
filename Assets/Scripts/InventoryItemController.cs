@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using DevionGames;
 using DevionGames.InventorySystem;
 using UnityEngine;

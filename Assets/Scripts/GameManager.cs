@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
         var levelGenerator = new LevelGenerator();
 
-        var itemNames = itemDatabase.items.Select(x => x.name).ToList();
+        var itemNames = itemDatabase.items.Select(x => x.Name).ToList();
 
         levelData = levelGenerator.GenerateLevel(itemNames, ItemGoalCount);
 

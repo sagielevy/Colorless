@@ -7,7 +7,7 @@ public class LevelGenerator
     public string GenerateLevelText(List<string> selectedItemNames)
     {
         var levelInstructions = new StringBuilder();
-        levelInstructions.Append("Objects to find:\n\n");
+        levelInstructions.Append("Decorate living room tree with:\n\n");
 
         foreach (var item in selectedItemNames)
         {

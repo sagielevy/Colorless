@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: Yellow Donut
   m_EditorClassIdentifier: 
   m_Id: 89a0c585-628a-4188-ae5e-02d5bd3a2b77
-  m_ItemName: Yellow Donut
+  m_ItemName: Yellow-Cream Donut
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 719ef1e21d52b4bf4b1bd7b291c952a6, type: 3}
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: Pink Donut
   m_EditorClassIdentifier: 
   m_Id: d295d08c-a68d-4348-b0bd-7b6b56f42bc9
-  m_ItemName: Pink Donut
+  m_ItemName: Pink-Cream Donut
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 719ef1e21d52b4bf4b1bd7b291c952a6, type: 3}
@@ -779,7 +779,7 @@ MonoBehaviour:
   m_Name: Green Donut
   m_EditorClassIdentifier: 
   m_Id: 44bd34bb-6846-4f13-92ac-26c9d1a76591
-  m_ItemName: Green Donut
+  m_ItemName: Green-Cream Donut
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 719ef1e21d52b4bf4b1bd7b291c952a6, type: 3}
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Name: Blue Donut
   m_EditorClassIdentifier: 
   m_Id: 8b09d3be-a4b9-448b-966f-b80d022bb756
-  m_ItemName: Blue Donut
+  m_ItemName: Blue-Cream Donut
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 719ef1e21d52b4bf4b1bd7b291c952a6, type: 3}
