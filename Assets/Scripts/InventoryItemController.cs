@@ -4,7 +4,6 @@ using DevionGames;
 using DevionGames.InventorySystem;
 using UnityEngine;
 
-[RequireComponent(typeof(ItemCollection))]
 public class InventoryItemController : MonoBehaviour
 {
     private int currentRoomIndex = 0;
@@ -19,17 +18,11 @@ public class InventoryItemController : MonoBehaviour
         }
     }
 
-    public ItemCollection finalRoom;
-
+    [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private GameObject room1;
     [SerializeField] private GameObject room2;
     [SerializeField] private GameObject roomFinal;
     [SerializeField] private ItemContainer itemContainer;
-    
-    private void Start()
-    {
-        finalRoom = GetComponent<ItemCollection>();
-    }
 
     public void AddItem(CallbackEventData data)
     {
@@ -37,7 +30,7 @@ public class InventoryItemController : MonoBehaviour
 
         if (IsInFinalRoom())
         {
-            finalRoom.Remove(itemData.item);
+            finalRoomItems.Remove(itemData.item);
             ChangeDropMode();
         }
     }
@@ -64,31 +57,31 @@ public class InventoryItemController : MonoBehaviour
             finalRoomPos :
             originalPos;
 
-        var roomIndex = IsInFinalRoom() ? GameStateManager.RoomFinalIndex : originalRoomInex;
+        var roomIndex = IsInFinalRoom() ? GameManager.RoomFinalIndex : originalRoomInex;
 
         itemData.gameObject.transform.parent = GetRoom(roomIndex).transform;
 
         if (IsInFinalRoom())
         {
-            finalRoom.Add(itemData.item);
+            finalRoomItems.Add(itemData.item);
             ChangeDropMode();
         }
     }
 
     private bool IsInFinalRoom()
     {
-        return CurrentRoomIndex == GameStateManager.RoomFinalIndex;
+        return CurrentRoomIndex == GameManager.RoomFinalIndex;
     }
 
     private GameObject GetRoom(int roomIndex)
     {
         switch (roomIndex)
         {
-            case GameStateManager.Room1Index:
+            case GameManager.Room1Index:
                 return room1;
-            case GameStateManager.Room2Index:
+            case GameManager.Room2Index:
                 return room2;
-            case GameStateManager.RoomFinalIndex:
+            case GameManager.RoomFinalIndex:
                 return roomFinal;
             default:
                 Debug.LogError($"no such room index: {currentRoomIndex}");
@@ -104,6 +97,6 @@ public class InventoryItemController : MonoBehaviour
     private void ChangeDropMode()
     {
         itemContainer.CanDropItems =
-            !IsInFinalRoom() || finalRoom.Count < GameStateManager.ItemGoalCount;
+            !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
     }
 }

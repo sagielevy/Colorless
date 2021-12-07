@@ -7,7 +7,7 @@ using System.Linq;
 
 public class GameWinChecker : MonoBehaviour
 {
-    [SerializeField] private ItemCollection finalRoom;
+    [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private GameObject winDisplay;
     [SerializeField] private GameInstructionController gameInstructionController;
     [SerializeField] private FilterController filterController;
@@ -23,22 +23,17 @@ public class GameWinChecker : MonoBehaviour
         this.levelData = levelData;
     }
 
-    public void UpdateLevel(ItemCollection finalRoom,
+    public void UpdateLevel(ItemCollection finalRoomItems,
         GameObject winDisplay, FilterController filterController)
     {
-        this.finalRoom = finalRoom;
+        this.finalRoomItems = finalRoomItems;
         this.winDisplay = winDisplay;
         this.filterController = filterController;
     }
 
     public void CheckForWin()
     {
-        var userItems = finalRoom.Select(x => x.Name).ToHashSet();
-
-        foreach (var item in userItems)
-        {
-            Debug.Log(item);
-        }
+        var userItems = finalRoomItems.Select(x => x.Name).ToHashSet();
 
         if (userItems.SetEquals(levelData))
         {

@@ -72,7 +72,7 @@ namespace DevionGames
                     NotifyInterrupted();
                     this.m_ActionBehavior.Interrupt();
                 }
-                this.InRange = false;
+                //this.InRange = false;
             }
         }
 
@@ -86,7 +86,7 @@ namespace DevionGames
                     NotifyInterrupted();
                     this.m_ActionBehavior.Interrupt();
                 }
-                this.InRange = false;
+                //this.InRange = false;
             }
         }
 
@@ -121,7 +121,7 @@ namespace DevionGames
             }
             //Trigger.currentUsedTrigger = this;
             //Set the trigger in use
-            this.InUse = true;
+            this.InUse = true; // TODO Sagie: needed???
             this.m_ActionBehavior.Start();
             return true;
         }
@@ -158,6 +158,5 @@ namespace DevionGames
                 }
             }
         }
-
     }
 }

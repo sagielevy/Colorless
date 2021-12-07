@@ -131,7 +131,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -8, y: -4.41, z: 0}
+    vector3Value: {x: -1.12, y: -1.11, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -289,7 +289,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 7.72, y: -4.61, z: 0}
+    vector3Value: {x: 7.8, y: -0.74, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -401,7 +401,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 7.02, y: 0.31, z: 0}
+    vector3Value: {x: -3.64, y: 3.12, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefcd19cdc9839d449772c4dce1503f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoSave: 1
+  autoSave: 0
   savingKey: Player
   savingRate: 60
   provider: 0

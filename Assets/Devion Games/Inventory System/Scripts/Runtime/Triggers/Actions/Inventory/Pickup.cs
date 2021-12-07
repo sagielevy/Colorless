@@ -29,7 +29,6 @@ namespace DevionGames.InventorySystem
                     GameObject.Destroy(gameObject,0.1f);
                 }
             });
-
         }
 
         public override ActionStatus OnUpdate()
