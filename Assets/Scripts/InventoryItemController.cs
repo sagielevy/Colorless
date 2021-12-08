@@ -51,9 +51,6 @@ public class InventoryItemController : MonoBehaviour
     public void UseItemCallback(CallbackEventData data)
     {
         var itemData = data as ItemEventData;
-        Debug.Log("use item");
-
-        itemContainer.RemoveItem(itemData.item); // TODO: fix! why is it a prefab?
         AttemptToRemoveItem(itemData);
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DevionGames.UIWidgets;
 using UnityEngine;
@@ -81,7 +82,7 @@ namespace DevionGames.InventorySystem
                 List<string> callbacks = new List<string>();
                 callbacks.Add("OnAddItem");
                 callbacks.Add("OnRemoveItem");
-                callbacks.Add("OnUseItem");
+                //callbacks.Add("OnUseItem");
                 return callbacks.ToArray();
             }
         }
@@ -106,14 +107,14 @@ namespace DevionGames.InventorySystem
                 }
 
             };
-            Container.OnUseItem += (Item item, Slot slot) => {
-                if (slot == this)
-                {
-                    ItemEventData eventData = new ItemEventData(item);
-                    eventData.slot = slot;
-                    Execute("OnUseItem", eventData);
-                }
-            };
+            //Container.OnUseItem += (Item item, Slot slot) => {
+            //    if (slot == this)
+            //    {
+            //        ItemEventData eventData = new ItemEventData(item);
+            //        eventData.slot = slot;
+            //        Execute("OnUseItem", eventData);
+            //    }
+            //};
 
             if (this.m_Stack != null)
                 this.m_Stack.raycastTarget = false;
@@ -173,7 +174,8 @@ namespace DevionGames.InventorySystem
                 {
                     Debug.Log("use");
                     ObservedItem.Use();
-                    Container.NotifyUseItem(ObservedItem, this);
+                    //Container.NotifyUseItem(ObservedItem, this);
+                    throw new NotImplementedException();
                 }
             }
         }

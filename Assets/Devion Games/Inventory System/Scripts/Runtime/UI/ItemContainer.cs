@@ -62,11 +62,17 @@ namespace DevionGames.InventorySystem
         /// </summary>
         public event FailedToRemoveItemDelegate OnFailedToRemoveItem;
 
-        public delegate void UseItemDelegate(Item item, Slot slot);
+        //public delegate void UseItemDelegate(Item item, Slot slot);
+
+        public delegate void TryUseItemDelegate(Item item, Slot slot);
+
         /// <summary>
         /// Called when the user trys to use item. This is called before OnUseItem and any checks including CanUseItem
         /// </summary>
-        public event UseItemDelegate OnTryUseItem;
+        public event TryUseItemDelegate OnTryUseItem;
+
+        public delegate void UseItemDelegate(Item item, GameObject usedInstance);
+
         /// <summary>
         /// Called when an item was used from this container.
         /// </summary>
@@ -1474,14 +1480,21 @@ namespace DevionGames.InventorySystem
                     Execute("OnFailedToRemoveItem", eventData);
                 }
             };
-            OnTryUseItem += (Item item, Slot slot) => {
+            OnTryUseItem += (Item item, Slot slot) =>
+            {
                 ItemEventData eventData = new ItemEventData(item);
                 eventData.slot = slot;
                 Execute("OnTryUseItem", eventData);
             };
-            OnUseItem += (Item item, Slot slot) => {
+            //OnUseItem += (Item item, Slot slot) => {
+            //    ItemEventData eventData = new ItemEventData(item);
+            //    eventData.slot = slot;
+            //    Execute("OnUseItem", eventData);
+            //};
+
+            OnUseItem += (Item item, GameObject usedInstance) => {
                 ItemEventData eventData = new ItemEventData(item);
-                eventData.slot = slot;
+                eventData.gameObject = usedInstance;
                 Execute("OnUseItem", eventData);
             };
 
@@ -1822,10 +1835,15 @@ namespace DevionGames.InventorySystem
             OnDropItem(item, instance);
         }
 
-        public void NotifyUseItem(Item item, Slot slot)
+        public void NotifyUseItem(Item item, GameObject instance)
         {
-            OnUseItem(item, slot);
+            OnUseItem(item, instance);
         }
+
+        //public void NotifyUseItem(Item item, Slot slot)
+        //{
+        //    OnUseItem(item, slot);
+        //}
 
         public void NotifyTryUseItem(Item item, Slot slot)
         {
