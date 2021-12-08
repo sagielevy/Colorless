@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class FilterController : MonoBehaviour
@@ -62,6 +63,11 @@ public class FilterController : MonoBehaviour
     public void SetColorlessFactor(float factor)
     {
         filterMaterial.SetFloat("_ColorlessFactor", factor);
+    }
+
+    public void FadeInColors(float duration)
+    {
+        filterMaterial.DOFloat(1, "_ColorlessFactor", duration);
     }
 
     private void Update()

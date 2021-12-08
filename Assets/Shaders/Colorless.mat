@@ -45,6 +45,6 @@ Material:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 0}
     - _MouseOrientation: {r: 1, g: -1, b: 0, a: 0}
-    - _MousePos: {r: 604, g: 711, b: 1138, a: 640}
+    - _MousePos: {r: 856, g: 1070, b: 1792, a: 1008}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

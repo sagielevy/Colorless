@@ -72,3 +72,4 @@ MonoBehaviour:
   filterController: {fileID: 0}
   RoomCanvas: {fileID: 0}
   animateWinSpeed: 0.4
+  failMessageDuration: 3

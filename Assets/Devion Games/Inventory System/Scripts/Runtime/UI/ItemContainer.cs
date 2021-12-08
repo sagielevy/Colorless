@@ -186,7 +186,7 @@ namespace DevionGames.InventorySystem
         public bool CanUseItems
         {
             get { return this.m_CanUseItems; }
-            protected set { this.m_CanUseItems = value; }
+            set { this.m_CanUseItems = value; }
         }
 
         [Tooltip("Use context menu for item interaction.")]

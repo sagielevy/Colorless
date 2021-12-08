@@ -7,19 +7,14 @@ public class GameWinChecker : MonoBehaviour
 {
     [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private GameObject winDisplay;
-    [SerializeField] private FailDisplayController failDisplay;
+    [SerializeField] private TextDisplayController failDisplay;
     [SerializeField] private GameInstructionController gameInstructionController;
     [SerializeField] private FilterController filterController;
     [SerializeField] private Canvas RoomCanvas;
-    [SerializeField] private float animateWinSpeed = 0.4f;
-    [SerializeField] private float failMessageDuration = 2f;
+    [SerializeField] private float animateWinDuration = 3f;
+    [SerializeField] private float failMessageDuration = 3f;
 
     private HashSet<string> levelData;
-    private bool hasWon = false;
-    private float wonTime;
-
-    private bool hasFailed = false;
-    private float lastFailTime;
 
     public void SetLevelData(HashSet<string> levelData)
     {
@@ -32,50 +27,22 @@ public class GameWinChecker : MonoBehaviour
 
         if (userItems.SetEquals(levelData))
         {
-            hasWon = true;
-            wonTime = Time.time;
-            winDisplay.SetActive(true);
+            HandleWin();
         }
         else if (userItems.Count == GameManager.ItemGoalCount)
         {
-            hasFailed = true;
-            lastFailTime = Time.time;
-            failDisplay.gameObject.SetActive(true);
-            failDisplay.DefaultOpacity();
+            failDisplay.SetDefaultOpacity(false);
+            failDisplay.FadeOut(failMessageDuration);
             gameInstructionController.TurnOffInstructions();
-        }
-    }
-
-    private void Update()
-    {
-        if (hasWon)
-        {
-            HandleWin();
-        } else if (hasFailed)
-        {
-            HandleFail();
         }
     }
 
     private void HandleWin()
     {
+        winDisplay.SetActive(true);
         RoomCanvas.enabled = false;
         gameInstructionController.TurnOffInstructions();
-        var factor = Mathf.Lerp(0, 1, (Time.time - wonTime) * animateWinSpeed);
+        filterController.FadeInColors(animateWinDuration);
         filterController.SetClearColor();
-        filterController.SetColorlessFactor(factor);
-    }
-
-    private void HandleFail()
-    {
-        var failTimeDelta = Time.time - lastFailTime;
-
-        failDisplay.SetOpacity(Mathf.Lerp(1, 0, failTimeDelta / failMessageDuration));
-
-        if (failTimeDelta > failMessageDuration)
-        {
-            hasFailed = false;
-            failDisplay.gameObject.SetActive(false);
-        }
     }
 }

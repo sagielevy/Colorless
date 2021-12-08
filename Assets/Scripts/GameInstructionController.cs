@@ -1,34 +1,48 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Toggle))]
 public class GameInstructionController : MonoBehaviour
 {
-    [SerializeField] private GameObject instructions;
-    [SerializeField] private Toggle toggle;
+    [SerializeField] private TextDisplayController instructions;
+    [SerializeField] private float instructionsDuration = 15f;
+    [SerializeField] private float instructionsFadeDuration = 2f;
+
+    private Coroutine timer;
 
     private void Start()
     {
-        toggle = GetComponent<Toggle>();
+        timer = StartCoroutine(StartTimeoutCounter());
     }
 
-    public void ToggleGameInstructions(bool isOn)
+    private IEnumerator<WaitForSeconds> StartTimeoutCounter()
     {
-        instructions.SetActive(isOn);
+        yield return new WaitForSeconds(instructionsDuration);
+
+        timer = null;
+        instructions.FadeOut(instructionsFadeDuration);
     }
 
-
-    public void ToggleGameInstructions()
+    public void TurnOnGameInstructions()
     {
-        toggle.isOn = !toggle.isOn;
+        if (timer != null)
+        {
+            StopCoroutine(timer);
+        }
 
-        instructions.SetActive(toggle.isOn);
+        instructions.SetDefaultOpacity(true);
+        timer = StartCoroutine(StartTimeoutCounter());
     }
 
     public void TurnOffInstructions()
     {
-        toggle.isOn = false;
-        instructions.SetActive(false);
+        if (timer != null)
+        {
+            StopCoroutine(timer);
+            timer = null;
+            instructions.FadeOut(instructionsFadeDuration);
+        }
     }
 }

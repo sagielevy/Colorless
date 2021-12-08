@@ -33,20 +33,32 @@ public class InventoryItemController : MonoBehaviour
         }
     }
 
-    public void RemoveItem(CallbackEventData data)
+    public void RemoveItemCallback(CallbackEventData data)
     {
         // Happens first on drop out.
         var itemData = data as ItemEventData;
 
-        // TODO what's needed here?
+        // TODO Needed?
     }
 
-    public void DropItem(CallbackEventData data)
+    public void DropItemCallback(CallbackEventData data)
     {
         // Happens last on drop out.
         var itemData = data as ItemEventData;
+        AttemptToRemoveItem(itemData);
+    }
 
+    public void UseItemCallback(CallbackEventData data)
+    {
+        var itemData = data as ItemEventData;
+        Debug.Log("use item");
 
+        itemContainer.RemoveItem(itemData.item); // TODO: fix! why is it a prefab?
+        AttemptToRemoveItem(itemData);
+    }
+
+    private void AttemptToRemoveItem(ItemEventData itemData)
+    {
         var originalPos = itemData.item.FindProperty("OriginalPosition").vector3Value;
         var originalRoomInex = itemData.item.FindProperty("OriginalRoomIndex").intValue;
         var finalRoomPos = itemData.item.FindProperty("FinalRoomPosition").vector3Value;
@@ -94,7 +106,11 @@ public class InventoryItemController : MonoBehaviour
 
     private void ChangeDropMode()
     {
-        itemContainer.CanDropItems =
-            !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
+        var canPlaceItemsInFinalRoom = !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
+        itemContainer.CanDropItems = canPlaceItemsInFinalRoom;
+        itemContainer.CanUseItems = canPlaceItemsInFinalRoom;
+
+        // TODO: Show this when user attempts to use or drop! But this should be in "canUse/canDrop" - they won't be called if these flags are off..
+        //InventoryManager.Notifications.roomFull.Show();
     }
 }
