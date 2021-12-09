@@ -12,7 +12,7 @@ public class InventoryItemController : MonoBehaviour
         set
         {
             currentRoomIndex = value;
-            ChangeDropMode();
+            CanPlaceItemsMode();
         }
     }
 
@@ -29,7 +29,7 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Remove(itemData.item);
-            ChangeDropMode();
+            CanPlaceItemsMode();
         }
     }
 
@@ -71,7 +71,7 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Add(itemData.item);
-            ChangeDropMode();
+            CanPlaceItemsMode();
         }
     }
 
@@ -101,7 +101,7 @@ public class InventoryItemController : MonoBehaviour
         CurrentRoomIndex = roomIndex;
     }
 
-    private void ChangeDropMode()
+    private void CanPlaceItemsMode()
     {
         var canPlaceItemsInFinalRoom = !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
         itemContainer.CanDropItems = canPlaceItemsInFinalRoom;

@@ -267,7 +267,11 @@ namespace DevionGames.InventorySystem
                     }
                     else
                     {
-                        Use();
+                        // Sagie: Consider as drop item for this game's usecase.
+                        if (Container.CanDropItems)
+                        {
+                            Use();
+                        }
                     }
                 }
             }
@@ -489,30 +493,33 @@ namespace DevionGames.InventorySystem
                 if (!MoveItem())
                 {
                     CloseTooltip();
-                    ObservedItem.Use();
+                    //ObservedItem.Use();
 
                     Item item = ObservedItem;
                     GameObject prefab = item.OverridePrefab != null ? item.OverridePrefab : item.Prefab;
 
-                    //Instantiate the prefab at origin.
-                    GameObject go = InventoryManager.Instantiate(prefab);
-
-                    go.name = go.name.Replace("(Clone)", "");
-
-                    //Reset the item collection of the prefab with this item
-                    ItemCollection collection = go.GetComponent<ItemCollection>();
-
-                    if (collection != null)
+                    if (item != null && item.IsDroppable)
                     {
-                        collection.Clear();
-                        collection.Add(item);
-                    }
-                    PlaceItem placeItem = go.GetComponentInChildren<PlaceItem>(true);
-                    if (placeItem != null)
-                        placeItem.enabled = true;
+                        //Instantiate the prefab at origin.
+                        GameObject go = InventoryManager.Instantiate(prefab);
 
-                    ItemContainer.RemoveItemCompletely(item);
-                    Container.NotifyUseItem(item, go);
+                        go.name = go.name.Replace("(Clone)", "");
+
+                        //Reset the item collection of the prefab with this item
+                        ItemCollection collection = go.GetComponent<ItemCollection>();
+
+                        if (collection != null)
+                        {
+                            collection.Clear();
+                            collection.Add(item);
+                        }
+                        PlaceItem placeItem = go.GetComponentInChildren<PlaceItem>(true);
+                        if (placeItem != null)
+                            placeItem.enabled = true;
+
+                        ItemContainer.RemoveItemCompletely(item);
+                        Container.NotifyUseItem(item, go);
+                    }
                 } else {
                     CloseTooltip();
                     ShowTooltip();
