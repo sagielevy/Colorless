@@ -64,9 +64,14 @@ public class InventoryItemController : MonoBehaviour
             finalRoomPos :
             originalPos;
 
-        var roomIndex = IsInFinalRoom() ? GameManager.RoomFinalIndex : originalRoomInex;
+        var roomIndexToPlaceItem = IsInFinalRoom() ? GameManager.RoomFinalIndex : originalRoomInex;
 
-        itemData.gameObject.transform.parent = GetRoom(roomIndex).transform;
+        itemData.gameObject.transform.parent = GetRoom(roomIndexToPlaceItem).transform;
+
+        if (roomIndexToPlaceItem == originalRoomInex && originalRoomInex != currentRoomIndex)
+        {
+            InventoryManager.Notifications.itemReturnedToOtherRoom.Show(); // TODO: is this useful?
+        }
 
         if (IsInFinalRoom())
         {

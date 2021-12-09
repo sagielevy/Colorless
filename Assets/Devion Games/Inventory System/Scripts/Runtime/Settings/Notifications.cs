@@ -41,6 +41,11 @@ namespace DevionGames.InventorySystem.Configuration
             text = "Tree is full of decorations!"
         };
 
+        public NotificationOptions itemReturnedToOtherRoom = new NotificationOptions()
+        {
+            text = "Item returned to the other room."
+        };
+
         public NotificationOptions failedRestriction = new NotificationOptions()
         {
             text = "{0} can't be added to {1}."
