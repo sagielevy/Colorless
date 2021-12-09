@@ -52,7 +52,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -7.98, y: 2.35, z: 0}
+    vector3Value: {x: -0.98, y: -3.36, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -70,7 +70,7 @@ MonoBehaviour:
   - name: OriginalRoomIndex
     typeIndex: 5
     stringValue: 
-    intValue: 1
+    intValue: 0
     floatValue: 0
     colorValue: {r: 0, g: 0, b: 0, a: 0}
     boolValue: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Yellow Donut
+  m_Name: Yellow-Cream Donut
   m_EditorClassIdentifier: 
   m_Id: 89a0c585-628a-4188-ae5e-02d5bd3a2b77
   m_ItemName: Yellow-Cream Donut
@@ -210,7 +210,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: 3.13, y: -0.84, z: 0}
+    vector3Value: {x: 4.02, y: -2.74, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Pink Donut
+  m_Name: Pink-Cream Donut
   m_EditorClassIdentifier: 
   m_Id: d295d08c-a68d-4348-b0bd-7b6b56f42bc9
   m_ItemName: Pink-Cream Donut
@@ -766,6 +766,85 @@ MonoBehaviour:
     vector3Value: {x: 1, y: 3, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-3306845057287674458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Cyan Dradle
+  m_EditorClassIdentifier: 
+  m_Id: 9270c588-24d4-4871-99f4-e505aed828e0
+  m_ItemName: Cyan Dradle
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1c16df5fa3c3b43a7ad9aaac449e0479, type: 3}
+  m_Prefab: {fileID: 5346457940374813274, guid: 20a076b67db424a57914a8cf4b4662dc, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 1.45, y: -1.19, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 5.42, y: 1.43, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 1
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-3201273713965119927
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -776,7 +855,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Green Donut
+  m_Name: Green-Cream Donut
   m_EditorClassIdentifier: 
   m_Id: 44bd34bb-6846-4f13-92ac-26c9d1a76591
   m_ItemName: Green-Cream Donut
@@ -902,6 +981,85 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &-9673859112576504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Red Dradle
+  m_EditorClassIdentifier: 
+  m_Id: 36ea4147-edab-4a57-8b45-e3eafd504668
+  m_ItemName: Red Dradle
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1c16df5fa3c3b43a7ad9aaac449e0479, type: 3}
+  m_Prefab: {fileID: 6443017915644937402, guid: 265be3bd5ba96443bb85fc9ae2af8241, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -6.37, y: 4.31, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 3.95, y: 1.06, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 1
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,8 +1073,8 @@ MonoBehaviour:
   m_Name: Colorless Database
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 4162398669960941618}
   - {fileID: -5778751113731850454}
+  - {fileID: 4162398669960941618}
   - {fileID: 6472586216016713383}
   - {fileID: -8365672738583038450}
   - {fileID: -3201273713965119927}
@@ -926,6 +1084,11 @@ MonoBehaviour:
   - {fileID: -6388559296897080164}
   - {fileID: -8858907630710808045}
   - {fileID: -9196442783936666578}
+  - {fileID: 2366112393005732777}
+  - {fileID: 2820789570922447107}
+  - {fileID: -3306845057287674458}
+  - {fileID: -9673859112576504}
+  - {fileID: 50350732320859708}
   currencies: []
   raritys: []
   categories:
@@ -938,6 +1101,85 @@ MonoBehaviour:
   - {fileID: -4266261863886437094}
   - {fileID: 7371619099684580905}
   - {fileID: 3502729804850136454}
+--- !u!114 &50350732320859708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Green Dradle
+  m_EditorClassIdentifier: 
+  m_Id: 6ef80fa1-0dfd-4a73-a0f4-2e46fa9fdd44
+  m_ItemName: Green Dradle
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1c16df5fa3c3b43a7ad9aaac449e0479, type: 3}
+  m_Prefab: {fileID: 7163830846220864371, guid: cae21cb7f3b7541b0a25a1f18c0cfd0e, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -7.81, y: 2.01, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 2.22, y: 0.96, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 1
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1689613186483839733
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -948,7 +1190,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Blue Donut
+  m_Name: Blue-Cream Donut
   m_EditorClassIdentifier: 
   m_Id: 8b09d3be-a4b9-448b-966f-b80d022bb756
   m_ItemName: Blue-Cream Donut
@@ -1015,6 +1257,164 @@ MonoBehaviour:
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
     vector3Value: {x: 3, y: 3, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &2366112393005732777
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: White Sock
+  m_EditorClassIdentifier: 
+  m_Id: 6a01f783-0807-4c06-b091-84be81fb17ee
+  m_ItemName: White Sock
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f954142651f4d4abe8e4f2abc20ef443, type: 3}
+  m_Prefab: {fileID: 71498774202322879, guid: 409abfe0a6a524d308b0821f275a3753, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -7.04, y: 1.35, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 3.86, y: -1.62, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &2820789570922447107
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Black Sock
+  m_EditorClassIdentifier: 
+  m_Id: 734049f4-edc9-4aac-8c0d-7bf794cb4c9c
+  m_ItemName: Black Sock
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f954142651f4d4abe8e4f2abc20ef443, type: 3}
+  m_Prefab: {fileID: 7462156056690928803, guid: a6497e56721c94984b362f46e355e965, type: 3}
+  m_Description: 
+  m_Category: {fileID: -7951129461597765027}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 0}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 0}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties:
+  - name: OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 3.69, y: 1.93, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: FinalRoomPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 3.09, y: -0.42, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &3502729804850136454
@@ -1086,7 +1486,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -3.92, y: -2.97, z: 0}
+    vector3Value: {x: -1.01, y: -3.19, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1104,7 +1504,7 @@ MonoBehaviour:
   - name: OriginalRoomIndex
     typeIndex: 5
     stringValue: 
-    intValue: 0
+    intValue: 1
     floatValue: 0
     colorValue: {r: 0, g: 0, b: 0, a: 0}
     boolValue: 0

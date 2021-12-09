@@ -18,7 +18,10 @@ public class TextDisplayController : MonoBehaviour
 
         text.color = new Color(text.color.r, text.color.g, text.color.b, defaultTextOpacity);
         text.DOKill();
-        text.DOFade(0, duration).OnComplete(() => text.raycastTarget = false);
+        text.DOFade(0, duration);
+
+        background.raycastTarget = false;
+        text.raycastTarget = false;
     }
 
     public void SetDefaultOpacity(bool shouldBeRaycastTarget)
