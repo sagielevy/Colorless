@@ -473,7 +473,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 233904002668037565}
   m_Stack: {fileID: 4821932413230978006}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 2981211599255503549}
@@ -481,6 +480,8 @@ MonoBehaviour:
   m_Description: {fileID: 0}
   m_Ingredients: {fileID: 0}
   m_BuyPrice: {fileID: 0}
+  roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  finalRoomItems: {fileID: 0}
 --- !u!1 &961854816162175210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1027,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 2862943085099180103}
   m_Stack: {fileID: 6455425666697616121}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 3209494263947715728}
@@ -1034,6 +1034,8 @@ MonoBehaviour:
   m_Description: {fileID: 0}
   m_Ingredients: {fileID: 0}
   m_BuyPrice: {fileID: 0}
+  roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  finalRoomItems: {fileID: 0}
 --- !u!1 &2026761017573296133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,7 +3106,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 3291606366393911661}
   m_Stack: {fileID: 8880632223087937812}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 6310743323732210648}
@@ -3112,6 +3113,8 @@ MonoBehaviour:
   m_Description: {fileID: 0}
   m_Ingredients: {fileID: 0}
   m_BuyPrice: {fileID: 0}
+  roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  finalRoomItems: {fileID: 0}
 --- !u!1 &4349323927606507119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,7 +3727,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437591360793991}
   m_Stack: {fileID: 4349323928785357684}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_Currency: {fileID: -8859189835947310016, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 1
 --- !u!1 &4349323928464557860
@@ -4666,7 +4668,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437590356994725}
   m_Stack: {fileID: 6517437589849002891}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_Currency: {fileID: -2811142919616601772, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 0
 --- !u!1 &4349323929483006942
@@ -4824,7 +4825,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437590247542196}
   m_Stack: {fileID: 6517437590284047092}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_Currency: {fileID: -6442420119529586086, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 1
 --- !u!1 &4349323929606619223
@@ -5084,6 +5084,7 @@ GameObject:
   - component: {fileID: 4715611350956406338}
   - component: {fileID: 4715611350956406341}
   - component: {fileID: 4715611350956406339}
+  - component: {fileID: 2126942676758691037}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -5259,7 +5260,8 @@ MonoBehaviour:
   m_ShowTooltips: 0
   m_MoveUsedItem: 0
   moveItemConditions: []
-  restrictions: []
+  restrictions:
+  - {fileID: 2126942676758691037}
 --- !u!114 &4715611350956406339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5287,6 +5289,18 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2126942676758691037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4715611350956406343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0539698807434ff785053a8a1035b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4715611351156776720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,7 +5758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4715611352028719782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5935,7 +5949,6 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 4715611352297592805}
   m_Stack: {fileID: 4715611351547985106}
   restrictions: []
-  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 4715611351156776750}
@@ -5943,6 +5956,8 @@ MonoBehaviour:
   m_Description: {fileID: 0}
   m_Ingredients: {fileID: 0}
   m_BuyPrice: {fileID: 0}
+  roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  finalRoomItems: {fileID: 0}
 --- !u!1 &4715611352297592807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,8 +6766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -25, y: 179}
-  m_SizeDelta: {x: 426, y: 127.19}
+  m_AnchoredPosition: {x: 0, y: 179}
+  m_SizeDelta: {x: 587.3805, y: 127.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &5511729031314015335
 CanvasGroup:

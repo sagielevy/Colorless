@@ -83,6 +83,8 @@ namespace DevionGames.InventorySystem
         protected ScrollRect m_ParentScrollRect;
         protected bool m_IsMouseKey;
 
+        [SerializeField] protected IntVariable roomIndex;
+        [SerializeField] protected ItemCollection finalRoomItems;
 
         protected override void Start()
         {
@@ -358,6 +360,12 @@ namespace DevionGames.InventorySystem
             if (IsCooldown)
                 return;
 
+            if (!restrictions.All(x => x.CanPlaceItemInRoom(roomIndex.GetValue(), finalRoomItems)))
+            {
+                InventoryManager.Notifications.roomFull.Show();
+                return;
+            }
+
             //Get the item to drop
             Item item = dragObject != null ? dragObject.item : ObservedItem;
 
@@ -479,6 +487,12 @@ namespace DevionGames.InventorySystem
             //Check if the item can be used.
             if (CanUse())
             {
+                if (!restrictions.All(x => x.CanPlaceItemInRoom(roomIndex.GetValue(), finalRoomItems)))
+                {
+                    InventoryManager.Notifications.roomFull.Show();
+                    return;
+                }
+
                 //Check if there is an override item behavior on trigger.
                 if ((Trigger.currentUsedTrigger as Trigger) != null && (Trigger.currentUsedTrigger as Trigger).OverrideUse(this, ObservedItem))
                 {
@@ -533,7 +547,7 @@ namespace DevionGames.InventorySystem
         //Can we use the item
         public override bool CanUse()
         {
-            return !IsCooldown && ObservedItem != null && restrictions.All(x => x.CanUseItem(roomIndex.GetValue()));
+            return !IsCooldown && ObservedItem != null;
         }
 
         public class DragObject {

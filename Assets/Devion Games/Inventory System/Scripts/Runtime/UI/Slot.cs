@@ -37,8 +37,6 @@ namespace DevionGames.InventorySystem
         [HideInInspector]
         public List<Restriction> restrictions = new List<Restriction>();
 
-        [SerializeField] protected IntVariable roomIndex;
-
         private Item m_Item;
         /// <summary>
         /// The item this slot is holding
@@ -185,8 +183,7 @@ namespace DevionGames.InventorySystem
 
         //Checks if we can use the item in this slot
         public virtual bool CanUse() {
-            //return true;
-            return restrictions.All(x => x.CanUseItem(roomIndex.GetValue()));
+            return true;
         }
 
         /// <summary>

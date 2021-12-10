@@ -4,6 +4,7 @@ using DevionGames.InventorySystem;
 using System.Linq;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+        DOTween.KillAll();
         roomIndex.SetValue(Room1Index);
 
         var levelGenerator = new LevelGenerator();

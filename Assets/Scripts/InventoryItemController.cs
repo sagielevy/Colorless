@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class InventoryItemController : MonoBehaviour
 {
-    //private int currentRoomIndex = 0;
-
-    //public int CurrentRoomIndex
-    //{
-    //    get { return currentRoomIndex; }
-    //    private set
-    //    {
-    //        currentRoomIndex = value;
-    //        SetCanPlaceItemsMode();
-    //    }
-    //}
-
     [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private GameObject room1;
     [SerializeField] private GameObject room2;
@@ -30,7 +18,6 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Remove(itemData.item);
-            SetCanPlaceItemsMode();
         }
     }
 
@@ -75,7 +62,6 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Add(itemData.item);
-            SetCanPlaceItemsMode();
         }
     }
 
@@ -103,21 +89,5 @@ public class InventoryItemController : MonoBehaviour
     public void ChangedRoom(int value)
     {
         roomIndex.SetValue(value);
-        SetCanPlaceItemsMode();
-    }
-
-    private bool CanPlaceItemsInRoom()
-    {
-        return !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
-    }
-
-    private void SetCanPlaceItemsMode()
-    {
-        var canPlaceItemsInFinalRoom = CanPlaceItemsInRoom();
-        itemContainer.CanDropItems = canPlaceItemsInFinalRoom;
-        itemContainer.CanUseItems = canPlaceItemsInFinalRoom;
-
-        // TODO: Show this when user attempts to use or drop! But this should be in "canUse/canDrop" - they won't be called if these flags are off..
-        //InventoryManager.Notifications.roomFull.Show();
     }
 }

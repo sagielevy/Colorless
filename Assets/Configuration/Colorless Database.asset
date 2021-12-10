@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: Room1
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
-  name: Room1
+  name: ColorlessItems
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
 --- !u!114 &-6664072224869631566
@@ -530,6 +530,14 @@ MonoBehaviour:
   roomFull:
     title: 
     text: Tree is full of decorations!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  itemReturnedToOtherRoom:
+    title: 
+    text: Item returned to the other room.
     color: {r: 1, g: 1, b: 1, a: 1}
     icon: {fileID: 0}
     delay: 2

@@ -2294,6 +2294,14 @@ MonoBehaviour:
     delay: 2
     duration: 2
     ignoreTimeScale: 1
+  itemReturnedToOtherRoom:
+    title: 
+    text: Item returned to the other room.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
   failedRestriction:
     title: 
     text: '{0} can''t be added to {1}.'
@@ -2859,6 +2867,14 @@ MonoBehaviour:
   roomFull:
     title: 
     text: Tree is full of decorations!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  itemReturnedToOtherRoom:
+    title: 
+    text: Item returned to the other room.
     color: {r: 1, g: 1, b: 1, a: 1}
     icon: {fileID: 0}
     delay: 2

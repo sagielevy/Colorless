@@ -144,7 +144,7 @@ namespace DevionGames.InventorySystem
         public bool CanDragOut
         {
             get { return this.m_CanDragOut; }
-            set { this.m_CanDragOut = value; }
+            protected set { this.m_CanDragOut = value; }
         }
 
         [Tooltip("Can the items be dropped from this container to ground.")]
@@ -156,7 +156,7 @@ namespace DevionGames.InventorySystem
         public bool CanDropItems
         {
             get { return this.m_CanDropItems; }
-            set { this.m_CanDropItems = value; }
+            protected set { this.m_CanDropItems = value; }
         }
 
         [Tooltip("Can the items be referenced from this container.")]
@@ -192,7 +192,7 @@ namespace DevionGames.InventorySystem
         public bool CanUseItems
         {
             get { return this.m_CanUseItems; }
-            set { this.m_CanUseItems = value; }
+            protected set { this.m_CanUseItems = value; }
         }
 
         [Tooltip("Use context menu for item interaction.")]
