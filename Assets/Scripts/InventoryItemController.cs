@@ -10,6 +10,7 @@ public class InventoryItemController : MonoBehaviour
     [SerializeField] private GameObject roomFinal;
     [SerializeField] private ItemContainer itemContainer;
     [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
+    [SerializeField] private GameWinChecker gameWinChecker;
 
     public void AddItem(CallbackEventData data)
     {
@@ -62,6 +63,7 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Add(itemData.item);
+            gameWinChecker.CheckForWin();
         }
     }
 
