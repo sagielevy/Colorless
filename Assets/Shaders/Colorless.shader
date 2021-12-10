@@ -4,9 +4,9 @@ Shader "Unlit/Colorless"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _ColorlessFactor ("ColorlessFactor", Range(0.0, 1.0)) = 1.0
+        _FilterRadius("FilterRadius", Range(0.0, 1.0)) = 0.2
         _LightColor("LightColor", Color) = (1, 1, 1, 0)
         _MousePos("MousePos", Vector) = (0, 0, 0, 0)
-        _MouseOrientation("MouseOrientation", Vector) = (1, -1, 0, 0)
     }
     SubShader
     {
@@ -40,11 +40,10 @@ Shader "Unlit/Colorless"
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float _ColorlessFactor;
+            float _FilterRadius;
             fixed4 _LightColor;
             float4 _MousePos;
             float4 _MouseOrientation;
-
-            #define YPrime fixed3(0.299, 0.5959, 0.2115)
 
             v2f vert (appdata v)
             {
@@ -58,19 +57,25 @@ Shader "Unlit/Colorless"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                float magnifierRadius = 0.1 * _MousePos.zw;
-
+                float magnifierRadius = _FilterRadius * _ScreenParams.xy;
                 fixed4 texCol = tex2D(_MainTex, i.uv);
                 fixed3 col = i.color.rgb * texCol.rgb;
 
-                float4 screenPos = ComputeScreenPos(i.vertex);
-                float2 screenUV = screenPos.xy / screenPos.w;
-
-                // Flip and scale by 0.5 to account for NDC.
                 float2 orientation = _MouseOrientation.xy;
-                float2 mouseCoords = _MousePos.xy * orientation * 0.5;
 
-                float distFromMouse = length(screenUV - mouseCoords);
+                float4 screenPos = ComputeScreenPos(i.vertex);
+
+                float2 screenCoord = screenPos.xy / screenPos.w;
+
+                // Scale by 2 and flip if needed to account for NDC.
+                screenCoord *= 2;
+
+                #if UNITY_UV_STARTS_AT_TOP
+                screenCoord.y = _ScreenParams.y - screenCoord.y;
+                #endif
+
+                float2 mouseCoords = _MousePos.xy;
+                float distFromMouse = length(screenCoord - mouseCoords);
 
                 fixed3 displayCol;
 
@@ -78,7 +83,7 @@ Shader "Unlit/Colorless"
                     col *= _LightColor.rgb;
                     displayCol = col;
                 } else {
-                    fixed3 intensity = fixed3(1, 1, 1) * dot(col, YPrime);
+                    fixed3 intensity = fixed3(1, 1, 1) * Luminance(col);
                     displayCol = lerp(intensity, col, _ColorlessFactor);
                 }
 

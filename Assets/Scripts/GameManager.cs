@@ -25,10 +25,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject roomFinal;
 
     [SerializeField] private Material colorlessMaterial;
+    [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
 
     private void Start()
     {
         PlayerPrefs.DeleteAll();
+        roomIndex.SetValue(Room1Index);
 
         var levelGenerator = new LevelGenerator();
 
@@ -41,15 +43,6 @@ public class GameManager : MonoBehaviour
 
         filterController.SetColorlessFactor(0);
         filterController.SetClearColor();
-
-#if UNITY_EDITOR
-        colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, -1, 0, 0));
-#elif UNITY_WEBGL
-            // Don't flip for web.
-            colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, 1, 0, 0));
-#else
-            colorlessMaterial.SetVector("_MouseOrientation", new Vector4(1, -1, 0, 0));
-#endif
     }
 
     public void MoveToRoom(int roomIndex)

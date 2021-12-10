@@ -75,8 +75,7 @@ public class FilterController : MonoBehaviour
         float mouseRatioX = Input.mousePosition.x;
         float mouseRatioY = Input.mousePosition.y;
 
-        var mousePos = new Vector4(mouseRatioX, mouseRatioY,
-            Screen.width, Screen.height);
+        var mousePos = new Vector4(mouseRatioX, mouseRatioY, 0, 0);
 
         filterMaterial.SetVector("_MousePos", mousePos);
     }

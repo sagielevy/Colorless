@@ -473,6 +473,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 233904002668037565}
   m_Stack: {fileID: 4821932413230978006}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 2981211599255503549}
@@ -1025,6 +1026,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 2862943085099180103}
   m_Stack: {fileID: 6455425666697616121}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 3209494263947715728}
@@ -3102,6 +3104,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 3291606366393911661}
   m_Stack: {fileID: 8880632223087937812}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 6310743323732210648}
@@ -3721,6 +3724,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437591360793991}
   m_Stack: {fileID: 4349323928785357684}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_Currency: {fileID: -8859189835947310016, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 1
 --- !u!1 &4349323928464557860
@@ -4662,6 +4666,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437590356994725}
   m_Stack: {fileID: 6517437589849002891}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_Currency: {fileID: -2811142919616601772, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 0
 --- !u!1 &4349323929483006942
@@ -4819,6 +4824,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 6517437590247542196}
   m_Stack: {fileID: 6517437590284047092}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_Currency: {fileID: -6442420119529586086, guid: 1ae57b994efcab048a1bb130d4e11d83, type: 2}
   m_HideEmptySlot: 1
 --- !u!1 &4349323929606619223
@@ -5929,6 +5935,7 @@ MonoBehaviour:
   "m_\xCDcon": {fileID: 4715611352297592805}
   m_Stack: {fileID: 4715611351547985106}
   restrictions: []
+  roomIndex: {fileID: 0}
   m_UseKey: 0
   m_Key: {fileID: 0}
   m_CooldownOverlay: {fileID: 4715611351156776750}
@@ -12880,7 +12887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructions: {fileID: 6702323223255377894}
-  instructionsDuration: 15
+  instructionsDuration: 25
   instructionsFadeDuration: 1.5
 --- !u!222 &6705364368321748149
 CanvasRenderer:

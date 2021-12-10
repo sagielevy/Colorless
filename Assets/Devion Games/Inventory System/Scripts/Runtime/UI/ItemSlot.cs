@@ -533,7 +533,7 @@ namespace DevionGames.InventorySystem
         //Can we use the item
         public override bool CanUse()
         {
-            return !IsCooldown && ObservedItem != null;
+            return !IsCooldown && ObservedItem != null && restrictions.All(x => x.CanUseItem(roomIndex.GetValue()));
         }
 
         public class DragObject {

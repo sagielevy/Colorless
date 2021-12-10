@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DevionGames.UIWidgets;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -35,6 +36,8 @@ namespace DevionGames.InventorySystem
         //Actions to run when the trigger is used.
         [HideInInspector]
         public List<Restriction> restrictions = new List<Restriction>();
+
+        [SerializeField] protected IntVariable roomIndex;
 
         private Item m_Item;
         /// <summary>
@@ -182,7 +185,8 @@ namespace DevionGames.InventorySystem
 
         //Checks if we can use the item in this slot
         public virtual bool CanUse() {
-            return true;
+            //return true;
+            return restrictions.All(x => x.CanUseItem(roomIndex.GetValue()));
         }
 
         /// <summary>

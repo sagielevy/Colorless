@@ -21,6 +21,7 @@ namespace DevionGames.InventorySystem
         }
 
         public abstract bool CanAddItem(Item item);
-
+        public abstract bool CanUseItem(int roomIndex);
+        public abstract bool CanDropItem(int roomIndex);
     }
 }

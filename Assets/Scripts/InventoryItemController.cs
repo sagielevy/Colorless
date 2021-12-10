@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class InventoryItemController : MonoBehaviour
 {
-    private int currentRoomIndex = 0;
+    //private int currentRoomIndex = 0;
 
-    private int CurrentRoomIndex
-    {
-        get { return currentRoomIndex; }
-        set
-        {
-            currentRoomIndex = value;
-            CanPlaceItemsMode();
-        }
-    }
+    //public int CurrentRoomIndex
+    //{
+    //    get { return currentRoomIndex; }
+    //    private set
+    //    {
+    //        currentRoomIndex = value;
+    //        SetCanPlaceItemsMode();
+    //    }
+    //}
 
     [SerializeField] private ItemCollection finalRoomItems;
     [SerializeField] private GameObject room1;
     [SerializeField] private GameObject room2;
     [SerializeField] private GameObject roomFinal;
     [SerializeField] private ItemContainer itemContainer;
+    [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
 
     public void AddItem(CallbackEventData data)
     {
@@ -29,7 +30,7 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Remove(itemData.item);
-            CanPlaceItemsMode();
+            SetCanPlaceItemsMode();
         }
     }
 
@@ -37,8 +38,6 @@ public class InventoryItemController : MonoBehaviour
     {
         // Happens first on drop out.
         var itemData = data as ItemEventData;
-
-        // TODO Needed?
     }
 
     public void DropItemCallback(CallbackEventData data)
@@ -68,7 +67,7 @@ public class InventoryItemController : MonoBehaviour
 
         itemData.gameObject.transform.parent = GetRoom(roomIndexToPlaceItem).transform;
 
-        if (roomIndexToPlaceItem == originalRoomInex && originalRoomInex != currentRoomIndex)
+        if (roomIndexToPlaceItem == originalRoomInex && originalRoomInex != roomIndex.GetValue())
         {
             InventoryManager.Notifications.itemReturnedToOtherRoom.Show(); // TODO: is this useful?
         }
@@ -76,18 +75,18 @@ public class InventoryItemController : MonoBehaviour
         if (IsInFinalRoom())
         {
             finalRoomItems.Add(itemData.item);
-            CanPlaceItemsMode();
+            SetCanPlaceItemsMode();
         }
     }
 
     private bool IsInFinalRoom()
     {
-        return CurrentRoomIndex == GameManager.RoomFinalIndex;
+        return roomIndex.GetValue() == GameManager.RoomFinalIndex;
     }
 
-    private GameObject GetRoom(int roomIndex)
+    private GameObject GetRoom(int forIndex)
     {
-        switch (roomIndex)
+        switch (forIndex)
         {
             case GameManager.Room1Index:
                 return room1;
@@ -96,19 +95,25 @@ public class InventoryItemController : MonoBehaviour
             case GameManager.RoomFinalIndex:
                 return roomFinal;
             default:
-                Debug.LogError($"no such room index: {currentRoomIndex}");
+                Debug.LogError($"no such room index: {forIndex}");
                 return null;
         }
     }
 
-    public void ChangedRoom(int roomIndex)
+    public void ChangedRoom(int value)
     {
-        CurrentRoomIndex = roomIndex;
+        roomIndex.SetValue(value);
+        SetCanPlaceItemsMode();
     }
 
-    private void CanPlaceItemsMode()
+    private bool CanPlaceItemsInRoom()
     {
-        var canPlaceItemsInFinalRoom = !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
+        return !IsInFinalRoom() || finalRoomItems.Count < GameManager.ItemGoalCount;
+    }
+
+    private void SetCanPlaceItemsMode()
+    {
+        var canPlaceItemsInFinalRoom = CanPlaceItemsInRoom();
         itemContainer.CanDropItems = canPlaceItemsInFinalRoom;
         itemContainer.CanUseItems = canPlaceItemsInFinalRoom;
 

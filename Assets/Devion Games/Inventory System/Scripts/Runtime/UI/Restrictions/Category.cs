@@ -28,5 +28,15 @@ namespace DevionGames.InventorySystem.Restrictions
             }*/
             return invert;
         }
+
+        public override bool CanDropItem(int roomIndex)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override bool CanUseItem(int roomIndex)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
