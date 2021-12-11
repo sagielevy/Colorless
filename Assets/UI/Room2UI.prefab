@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 1702682787}
   - component: {fileID: 1702682786}
   - component: {fileID: 1702682785}
+  - component: {fileID: 914637440}
   m_Layer: 5
   m_Name: To Room 1
   m_TagString: Untagged
@@ -668,6 +669,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &914637440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702682783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4415ce5bc50304838af001f4aaaafe9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultImageOpacity: 0.8
+  finalXPositionRelativeToDefault: 10
+  halfwayAnimationDuration: 1
+  waitDurationBeforeAnimationStart: 25
 --- !u!1 &1918717249
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +830,7 @@ GameObject:
   - component: {fileID: 4486947745383416222}
   - component: {fileID: 217423534882142496}
   - component: {fileID: 725107105632629951}
+  - component: {fileID: 1630159936}
   m_Layer: 5
   m_Name: 'To Final Room '
   m_TagString: Untagged
@@ -935,6 +953,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1630159936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920141667892642582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4415ce5bc50304838af001f4aaaafe9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultImageOpacity: 0.8
+  finalXPositionRelativeToDefault: -10
+  halfwayAnimationDuration: 1
+  waitDurationBeforeAnimationStart: 25
 --- !u!1 &4349323927777498178
 GameObject:
   m_ObjectHideFlags: 0
