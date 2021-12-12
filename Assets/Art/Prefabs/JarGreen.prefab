@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 6679546383919498649}
   - component: {fileID: 4740884271736072021}
   m_Layer: 0
-  m_Name: Billboard
+  m_Name: Halo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
