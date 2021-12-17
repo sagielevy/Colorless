@@ -60,6 +60,7 @@ Shader "Unlit/Colorless"
             fixed4 frag (v2f i) : SV_Target
             {
                 float magnifierRadius = _FilterRadius * _ScreenParams.xy;
+                float blurFactor = length(_ScreenParams.xy) / 60.0;
                 fixed4 texCol = tex2D(_MainTex, i.uv);
                 fixed3 col = i.color.rgb * texCol.rgb;
 
@@ -79,16 +80,20 @@ Shader "Unlit/Colorless"
                 float2 mouseCoords = _MousePos.xy;
                 float distFromMouse = length(screenCoord - mouseCoords);
 
+                // Darken original pixel luminance to provide a flashlight like effect for the filter.
+                fixed3 intensity = fixed3(1, 1, 1) * Luminance(col) * _LightnessOutsideOfFilter;
+                fixed3 intensityCol = lerp(intensity, col, _ColorlessFactor);
+
                 fixed3 displayCol;
 
-                if (_LightColor.a > 0 && distFromMouse < magnifierRadius) {
-                    col *= _LightColor.rgb;
-                    displayCol = col;
+                if (_LightColor.a > 0) {
+                    fixed3 filteredCol = col * _LightColor.rgb;
+                    float smoothFactor = smoothstep(-blurFactor, blurFactor, (distFromMouse - magnifierRadius));
+                    displayCol = lerp(filteredCol, intensityCol, smoothFactor);
                 } else {
-                    // Darken original pixel luminance to provide a flashlight like effect for the filter.
-                    fixed3 intensity = fixed3(1, 1, 1) * Luminance(col) * _LightnessOutsideOfFilter;
-                    displayCol = lerp(intensity, col, _ColorlessFactor);
+                    displayCol = intensityCol;
                 }
+                 
 
                 return fixed4(displayCol, texCol.a);
             }

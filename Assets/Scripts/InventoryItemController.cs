@@ -5,12 +5,11 @@ using UnityEngine;
 public class InventoryItemController : MonoBehaviour
 {
     [SerializeField] private ItemCollection finalRoomItems;
-    [SerializeField] private GameObject room1;
-    [SerializeField] private GameObject room2;
-    [SerializeField] private GameObject roomFinal;
+
     [SerializeField] private ItemContainer itemContainer;
     [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
     [SerializeField] private GameWinChecker gameWinChecker;
+    [SerializeField] private LevelControllersManager levelControllersManager;
 
     public void AddItem(CallbackEventData data)
     {
@@ -74,14 +73,16 @@ public class InventoryItemController : MonoBehaviour
 
     private GameObject GetRoom(int forIndex)
     {
+        var levelController = levelControllersManager.GetCurrentLevelController();
+
         switch (forIndex)
         {
             case GameManager.Room1Index:
-                return room1;
+                return levelController.GetRoom1();
             case GameManager.Room2Index:
-                return room2;
+                return levelController.GetRoom2();
             case GameManager.RoomFinalIndex:
-                return roomFinal;
+                return levelController.GetFinalRoom();
             default:
                 Debug.LogError($"no such room index: {forIndex}");
                 return null;

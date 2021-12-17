@@ -10,7 +10,7 @@ namespace DevionGames.InventorySystem
         protected Slot slot;
         protected ItemContainer container;
 
-        private void Start()
+        protected virtual void Start()
         {
             slot = GetComponent<Slot>();
             if (slot != null){

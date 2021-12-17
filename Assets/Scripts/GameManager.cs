@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using DevionGames.InventorySystem;
 using System.Linq;
 using UnityEngine.SceneManagement;
@@ -11,7 +10,6 @@ public class GameManager : MonoBehaviour
     public const int Room1Index = 0;
     public const int Room2Index = 1;
     public const int RoomFinalIndex = 2;
-    public const int ItemGoalCount = 4;
 
     private List<string> levelData;
 
@@ -20,24 +18,17 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameWinChecker gameWinChecker;
     [SerializeField] private TMPro.TextMeshProUGUI instructionsText;
-
-    [SerializeField] private GameObject room1;
-    [SerializeField] private GameObject room2;
-    [SerializeField] private GameObject roomFinal;
-
+    [SerializeField] private LevelControllersManager levelControllersManager; 
     [SerializeField] private Material colorlessMaterial;
     [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
+    [SerializeField] private DevionGames.InventorySystem.IntVariable level;
 
     private void Start()
     {
         DOTween.KillAll();
-        roomIndex.SetValue(Room1Index);
 
-        var levelGenerator = new LevelGenerator();
-
-        var itemNames = itemDatabase.items.Select(x => x.Name).ToList();
-
-        levelData = levelGenerator.GenerateLevel(itemNames, ItemGoalCount);
+        SetupCurrentLevel();
+        SetupLevelData();
 
         gameWinChecker.SetLevelData(levelData.ToHashSet());
         instructionsText.text = new LevelGenerator().GenerateLevelText(levelData);
@@ -46,28 +37,55 @@ public class GameManager : MonoBehaviour
         filterController.SetClearColor();
     }
 
+    private void SetupCurrentLevel()
+    {
+        var levelController = levelControllersManager.GetCurrentLevelController();
+        levelController.gameObject.SetActive(true);
+        roomIndex.SetValue(Room1Index);
+    }
+
+    private void SetupLevelData()
+    {
+        var levelController = levelControllersManager.GetCurrentLevelController();
+
+        if (levelController.HasPredefinedTargetItems)
+        {
+            levelData = levelController.GetLevelTargetItems().Select(x => x.DisplayName).ToList();
+        }
+        else
+        {
+            var level = levelControllersManager.GetCurrentLevelController();
+            var levelGenerator = new LevelGenerator();
+            var itemNames = itemDatabase.items.Select(x => x.DisplayName).ToList();
+            levelData = levelGenerator.GenerateLevel(itemNames, level.LevelItemGoalCount());
+        }
+    }
+
     public void MoveToRoom(int roomIndex)
     {
+        var levelController = levelControllersManager.GetCurrentLevelController();
+
         switch (roomIndex)
         {
             case Room1Index:
-                room1.SetActive(true);
-                room2.SetActive(false);
-                roomFinal.SetActive(false);
+                levelController.GetRoom1().SetActive(true);
+                if (levelController.GetRoom2() != null) levelController.GetRoom2().SetActive(false);
+                levelController.GetFinalRoom().SetActive(false);
+
                 filterController.SetColorlessFactor(0);
                 filterController.SetClearColor();
                 break;
             case Room2Index:
-                room1.SetActive(false);
-                room2.SetActive(true);
-                roomFinal.SetActive(false);
+                if (levelController.GetRoom1() != null) levelController.GetRoom1().SetActive(false);
+                levelController.GetRoom2().SetActive(true);
+                levelController.GetFinalRoom().SetActive(false);
                 filterController.SetColorlessFactor(0);
                 filterController.SetClearColor();
                 break;
             case RoomFinalIndex:
-                room1.SetActive(false);
-                room2.SetActive(false);
-                roomFinal.SetActive(true);
+                if (levelController.GetRoom1() != null) levelController.GetRoom1().SetActive(false);
+                if (levelController.GetRoom2() != null) levelController.GetRoom2().SetActive(false);
+                levelController.GetFinalRoom().SetActive(true);
                 filterController.SetColorlessFactor(0);
                 filterController.SetClearColor();
                 break;

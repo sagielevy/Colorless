@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7160738449714280345}
   - component: {fileID: 7160738449714280326}
   - component: {fileID: 2004510610}
+  - component: {fileID: 2004510611}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: Untagged
@@ -50,11 +51,10 @@ MonoBehaviour:
   filterController: {fileID: 0}
   gameWinChecker: {fileID: 7160738449714280326}
   instructionsText: {fileID: 0}
-  room1: {fileID: 0}
-  room2: {fileID: 0}
-  roomFinal: {fileID: 0}
+  levelControllersManager: {fileID: 2004510611}
   colorlessMaterial: {fileID: 2100000, guid: 463cfd5af11bf4344be0990433818a7e, type: 2}
   roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}
 --- !u!114 &7160738449714280326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +72,9 @@ MonoBehaviour:
   failDisplay: {fileID: 0}
   gameInstructionController: {fileID: 0}
   filterController: {fileID: 0}
+  levelControllersManager: {fileID: 2004510611}
   RoomCanvas: {fileID: 0}
+  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}
   animateWinDuration: 3
   failMessageDuration: 3
 --- !u!114 &2004510610
@@ -103,3 +105,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2004510611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160738449714280327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f777c0526c6dc4135b9675236137a8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelControllers:
+  - {fileID: 0}
+  - {fileID: 0}
+  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}

@@ -10,6 +10,7 @@ public class GameWinChecker : MonoBehaviour
     [SerializeField] private TextDisplayController failDisplay;
     [SerializeField] private GameInstructionController gameInstructionController;
     [SerializeField] private FilterController filterController;
+    [SerializeField] private LevelControllersManager levelControllersManager;
     [SerializeField] private Canvas RoomCanvas;
     [SerializeField] private float animateWinDuration = 3f;
     [SerializeField] private float failMessageDuration = 3f;
@@ -23,13 +24,14 @@ public class GameWinChecker : MonoBehaviour
 
     public void CheckForWin()
     {
+        var level = levelControllersManager.GetCurrentLevelController();
         var userItems = finalRoomItems.Select(x => x.Name).ToHashSet();
 
         if (userItems.SetEquals(levelData))
         {
             HandleWin();
         }
-        else if (userItems.Count == GameManager.ItemGoalCount)
+        else if (userItems.Count == level.LevelItemGoalCount())
         {
             failDisplay.SetDefaultOpacity(false);
             failDisplay.FadeOut(failMessageDuration);
@@ -44,5 +46,6 @@ public class GameWinChecker : MonoBehaviour
         gameInstructionController.TurnOffInstructions();
         filterController.FadeInColors(animateWinDuration);
         filterController.SetClearColor();
+        levelControllersManager.SetNextLevel();
     }
 }
