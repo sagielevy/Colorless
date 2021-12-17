@@ -41,12 +41,12 @@ Material:
     - _ColorlessFactor: 0
     - _EnableExternalAlpha: 0
     - _FilterRadius: 0.2
-    - _LightnessOutsideOfFilter: 0.35
+    - _LightnessOutsideOfFilter: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 0}
     - _MouseOrientation: {r: 1, g: -1, b: 0, a: 0}
-    - _MousePos: {r: 856, g: 1070, b: 1792, a: 1008}
+    - _MousePos: {r: 606, g: 770, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

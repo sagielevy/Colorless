@@ -13,7 +13,7 @@ public class GameWinChecker : MonoBehaviour
     [SerializeField] private LevelControllersManager levelControllersManager;
     [SerializeField] private Canvas RoomCanvas;
     [SerializeField] private float animateWinDuration = 3f;
-    [SerializeField] private float failMessageDuration = 3f;
+    [SerializeField] private float failMessageDuration = 5f;
 
     private HashSet<string> levelData;
 

@@ -52,9 +52,7 @@ MonoBehaviour:
   gameWinChecker: {fileID: 7160738449714280326}
   instructionsText: {fileID: 0}
   levelControllersManager: {fileID: 2004510611}
-  colorlessMaterial: {fileID: 2100000, guid: 463cfd5af11bf4344be0990433818a7e, type: 2}
   roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
-  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}
 --- !u!114 &7160738449714280326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,9 +72,8 @@ MonoBehaviour:
   filterController: {fileID: 0}
   levelControllersManager: {fileID: 2004510611}
   RoomCanvas: {fileID: 0}
-  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}
   animateWinDuration: 3
-  failMessageDuration: 3
+  failMessageDuration: 5
 --- !u!114 &2004510610
 MonoBehaviour:
   m_ObjectHideFlags: 0
