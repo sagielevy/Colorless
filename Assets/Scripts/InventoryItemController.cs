@@ -8,6 +8,7 @@ public class InventoryItemController : MonoBehaviour
 
     [SerializeField] private ItemContainer itemContainer;
     [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
+    [SerializeField] private DevionGames.InventorySystem.IntVariable level;
     [SerializeField] private GameWinChecker gameWinChecker;
     [SerializeField] private LevelControllersManager levelControllersManager;
 
@@ -43,18 +44,32 @@ public class InventoryItemController : MonoBehaviour
     private void AttemptToRemoveItem(ItemEventData itemData)
     {
         var originalPos = itemData.item.FindProperty("OriginalPosition").vector3Value;
-        var originalRoomInex = itemData.item.FindProperty("OriginalRoomIndex").intValue;
+        var originalRoomIndex = itemData.item.FindProperty("OriginalRoomIndex").intValue;
         var finalRoomPos = itemData.item.FindProperty("FinalRoomPosition").vector3Value;
+
+        var levelOverrideOriginalRoomIndex = itemData.item.FindProperty($"Level{level.GetValue()}OriginalRoomIndex");
+
+        if (levelOverrideOriginalRoomIndex != null)
+        {
+            originalRoomIndex = levelOverrideOriginalRoomIndex.intValue;
+        }
+
+        var levelOverrideOriginalPos = itemData.item.FindProperty($"Level{level.GetValue()}OriginalPosition");
+
+        if (levelOverrideOriginalPos != null)
+        {
+            originalPos = levelOverrideOriginalPos.vector3Value;
+        }
 
         itemData.gameObject.transform.position = IsInFinalRoom() ?
             finalRoomPos :
             originalPos;
 
-        var roomIndexToPlaceItem = IsInFinalRoom() ? GameManager.RoomFinalIndex : originalRoomInex;
+        var roomIndexToPlaceItem = IsInFinalRoom() ? GameManager.RoomFinalIndex : originalRoomIndex;
 
         itemData.gameObject.transform.parent = GetRoom(roomIndexToPlaceItem).transform;
 
-        if (roomIndexToPlaceItem == originalRoomInex && originalRoomInex != roomIndex.GetValue())
+        if (roomIndexToPlaceItem == originalRoomIndex && originalRoomIndex != roomIndex.GetValue())
         {
             InventoryManager.Notifications.itemReturnedToOtherRoom.Show(); // TODO: is this useful?
         }

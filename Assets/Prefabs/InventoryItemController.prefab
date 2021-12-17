@@ -98,11 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalRoomItems: {fileID: 4741889941440261708}
-  room1: {fileID: 0}
-  room2: {fileID: 0}
-  roomFinal: {fileID: 0}
   itemContainer: {fileID: 0}
   roomIndex: {fileID: 11400000, guid: 6634e35b292e744eeac257a92cb02473, type: 2}
+  level: {fileID: 11400000, guid: 6507d0c11425c4644a3017296ee22b26, type: 2}
+  gameWinChecker: {fileID: 0}
+  levelControllersManager: {fileID: 0}
 --- !u!114 &4741889942140711289
 MonoBehaviour:
   m_ObjectHideFlags: 0
