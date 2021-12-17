@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public const int Room1Index = 0;
     public const int Room2Index = 1;
     public const int RoomFinalIndex = 2;
+    private const float DefaultRoomLightness = 0.35f;
 
     private List<string> levelData;
 
@@ -18,10 +19,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameWinChecker gameWinChecker;
     [SerializeField] private TMPro.TextMeshProUGUI instructionsText;
-    [SerializeField] private LevelControllersManager levelControllersManager; 
-    [SerializeField] private Material colorlessMaterial;
+    [SerializeField] private LevelControllersManager levelControllersManager;
     [SerializeField] private DevionGames.InventorySystem.IntVariable roomIndex;
-    [SerializeField] private DevionGames.InventorySystem.IntVariable level;
 
     private void Start()
     {
@@ -34,6 +33,7 @@ public class GameManager : MonoBehaviour
         instructionsText.text = new LevelGenerator().GenerateLevelText(levelData);
 
         filterController.SetColorlessFactor(0);
+        filterController.SetLightness(DefaultRoomLightness);
         filterController.SetClearColor();
     }
 
@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
                 levelController.GetFinalRoom().SetActive(false);
 
                 filterController.SetColorlessFactor(0);
+                filterController.SetLightness(DefaultRoomLightness);
                 filterController.SetClearColor();
                 break;
             case Room2Index:
@@ -80,6 +81,7 @@ public class GameManager : MonoBehaviour
                 levelController.GetRoom2().SetActive(true);
                 levelController.GetFinalRoom().SetActive(false);
                 filterController.SetColorlessFactor(0);
+                filterController.SetLightness(DefaultRoomLightness);
                 filterController.SetClearColor();
                 break;
             case RoomFinalIndex:
@@ -87,6 +89,7 @@ public class GameManager : MonoBehaviour
                 if (levelController.GetRoom2() != null) levelController.GetRoom2().SetActive(false);
                 levelController.GetFinalRoom().SetActive(true);
                 filterController.SetColorlessFactor(0);
+                filterController.SetLightness(1);
                 filterController.SetClearColor();
                 break;
             default:
