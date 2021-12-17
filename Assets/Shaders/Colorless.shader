@@ -3,6 +3,7 @@ Shader "Unlit/Colorless"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _LightnessOutsideOfFilter("LightnessOutsideOfFilter", Range(0.0, 1.0)) = 1.0
         _ColorlessFactor ("ColorlessFactor", Range(0.0, 1.0)) = 1.0
         _FilterRadius("FilterRadius", Range(0.0, 1.0)) = 0.2
         _LightColor("LightColor", Color) = (1, 1, 1, 0)
@@ -39,6 +40,7 @@ Shader "Unlit/Colorless"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            float _LightnessOutsideOfFilter;
             float _ColorlessFactor;
             float _FilterRadius;
             fixed4 _LightColor;
@@ -83,7 +85,8 @@ Shader "Unlit/Colorless"
                     col *= _LightColor.rgb;
                     displayCol = col;
                 } else {
-                    fixed3 intensity = fixed3(1, 1, 1) * Luminance(col);
+                    // Darken original pixel luminance to provide a flashlight like effect for the filter.
+                    fixed3 intensity = fixed3(1, 1, 1) * Luminance(col) * _LightnessOutsideOfFilter;
                     displayCol = lerp(intensity, col, _ColorlessFactor);
                 }
 
