@@ -3,25 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 
 public class LevelGenerator
-{
-    private struct ItemColorData
+{ 
+    private readonly Dictionary<string, string> ItemColors = new()
     {
-        public string color;
-        public string? highlight;
-    }
-
-    private readonly Dictionary<string, ItemColorData> ItemColors = new Dictionary<string, ItemColorData>
-    {
-        { "black", new ItemColorData { color="#000000", highlight="#FFFFFF30"} },
-        { "white", new ItemColorData { color="#FFFFFF" } },
-        { "red", new ItemColorData { color="#FF0000" } },
-        { "green", new ItemColorData { color="#00FF00" } },
-        { "blue", new ItemColorData { color="#0000FF", highlight="#FFFFFF30"} },
-        { "cyan", new ItemColorData { color="#00FFFF" } },
-        { "magenta", new ItemColorData { color="#FF00FF" } },
-        { "pink", new ItemColorData { color="#FF00FF" } },
-        { "purple", new ItemColorData { color="#FF00FF" } },
-        { "yellow", new ItemColorData { color="#FFFF00" } }
+        { "black", "#000000" },
+        { "white", "#FFFFFF" },
+        { "red", "#FF0000" },
+        { "green", "#00FF00" },
+        { "blue", "#0000FF" },
+        { "cyan", "#00FFFF" },
+        { "magenta", "#FF00FF" },
+        { "pink", "#FF00FF" },
+        { "purple", "#FF00FF" },
+        { "yellow", "#FFFF00" }
     };
 
     public string GenerateLevelText(List<string> selectedItemNames)
@@ -31,23 +25,21 @@ public class LevelGenerator
 
         foreach (var item in selectedItemNames)
         {
-            var itemColorData = GetItemColorData(item);
-            var color = itemColorData.color;
-            var itemHighlightString = $"<mark={itemColorData.highlight ?? "#00000000"}>";
+            var colorName = GetItemColorData(item);
 
-            levelInstructions.AppendFormat($"<size=80%><color={color}><line-height=120%>{itemHighlightString}* {item}\n");
+            levelInstructions.AppendFormat($"<size=80%><color={colorName}><line-height=120%>* {item}\n");
         }
 
         return levelInstructions.ToString();
     }
 
-    private ItemColorData GetItemColorData(string item)
+    private string GetItemColorData(string item)
     {
         var itemLower = item.ToLower();
 
         foreach (var colorName in ItemColors)
         {
-            if (itemLower.Contains(colorName.Key)) // I should use an override for the dictionary comparator...
+            if (itemLower.Contains(colorName.Key)) // TODO: I should use an override for the dictionary comparator...
             {
                 return colorName.Value;
             }
