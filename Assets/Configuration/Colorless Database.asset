@@ -237,6 +237,18 @@ MonoBehaviour:
     vector3Value: {x: 0, y: 0, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Level0OriginalRoomIndex
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 2.06, y: 3.76, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-8365672738583038450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,7 +413,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -3.32, y: 3.12, z: 0}
+    vector3Value: {x: -3.07, y: 3.12, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1164,7 +1176,7 @@ MonoBehaviour:
     boolValue: 0
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
-    vector3Value: {x: -6.63, y: 0.78, z: 0}
+    vector3Value: {x: -6.63, y: -0.21, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
   - name: FinalRoomPosition
@@ -1524,6 +1536,18 @@ MonoBehaviour:
     vector3Value: {x: 2, y: 2, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Level0OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 2, y: 2, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &4394228944749482853
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1807,6 +1831,30 @@ MonoBehaviour:
     objectReferenceValue: {fileID: 0}
     vector2Value: {x: 0, y: 0}
     vector3Value: {x: -1, y: -3, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Level0OriginalRoomIndex
+    typeIndex: 5
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -1, y: -3, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Level0OriginalPosition
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: -0.77, y: -0.92, z: 0}
     show: 0
     color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &6842555577092299646

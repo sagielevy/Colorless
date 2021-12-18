@@ -12,6 +12,7 @@ public class GameWinChecker : MonoBehaviour
     [SerializeField] private FilterController filterController;
     [SerializeField] private LevelControllersManager levelControllersManager;
     [SerializeField] private Canvas RoomCanvas;
+    [SerializeField] private TMPro.TextMeshProUGUI newGameText;
     [SerializeField] private float animateWinDuration = 3f;
     [SerializeField] private float failMessageDuration = 5f;
 
@@ -46,6 +47,13 @@ public class GameWinChecker : MonoBehaviour
         gameInstructionController.TurnOffInstructions();
         filterController.FadeInColors(animateWinDuration);
         filterController.SetClearColor();
+        SetNewGameText();
         levelControllersManager.SetNextLevel();
+    }
+
+    private void SetNewGameText()
+    {
+        var level = levelControllersManager.GetCurrentLevelController();
+        newGameText.text = level.HasNextLevel ? "Next Level" : "Play Again";
     }
 }
